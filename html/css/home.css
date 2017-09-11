@@ -1,0 +1,31 @@
+/* home page css */
+.main-content .title {
+    color: rgb(238,49,69);
+    font-size: 35px;
+    /* font-weight: bold; */
+}
+
+.main-content .sub-title {
+    color: rgb(238,49,69);
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.main-content p {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.main-footer {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: rgba(238,49,69,0.85);
+    bottom: 0;
+}
+
+.navigation {
+	border-bottom: 3px solid #cf293f;
+}
+

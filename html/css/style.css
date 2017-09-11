@@ -1,1 +1,134 @@
 /* global style sheet */
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    background: rgba(255,255,255,0.85);
+    width: 50%;
+    height: 80%;
+    display: block;
+    -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    right: -50%;
+    bottom: 10px;
+    padding: 50px;
+    padding-left: 12%;
+    
+}
+
+
+body{
+	width:100%;
+	overflow: hidden;
+}
+.navigation {
+    height: 20%;
+    max-height: 80px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+}
+
+.site-logo {
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.site-logo img {
+    height: 100%;
+}
+
+.navigation {
+    padding: 4px;
+    padding-left: 20px;
+}
+
+.menu {
+    float: right;
+    margin-top: 15px;
+}
+
+.menu .menu-item {
+    float: left;
+    padding: 10px 20px;
+}
+
+.menu-item a {
+    color: rgb(238,49,69);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.menu-item:hover a {
+    cursor: pointer;
+    color: #9a9a9a;
+}
+
+
+
+.service-navigation {
+    position: absolute;
+    color: #fff;
+    top: 140px;
+    left: -200px;
+}
+
+.service-title {
+    width: 200px;
+    float: left;
+    height: 100%;
+    /* vertical-align: middle; */
+    text-align: center;
+    line-height: 50px;
+}
+
+.service-icon {
+    float: left;
+}
+
+.service-item {
+    overflow: hidden;
+    /* vertical-align: middle; */
+}
+
+.service-icon {
+    /* padding: 10px; */
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+}
+
+.sub-content {
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    top: 150px;
+    color: #fff;
+}
