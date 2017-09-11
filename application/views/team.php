@@ -3,7 +3,7 @@
 
 
 <div class="main-content" id="hirav_shah">
-	<div class="title">Hirav Shah</div>
+	<div class="title">Hirav <span>Shah</span></div>
 	<div class="row">
 		<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/hirav_shah.jpg"/></div>
 		<div class="team-member-bio">
@@ -19,7 +19,7 @@
 
 
 <div class="main-content" id="krishna_shah">
-	<div class="title">Krishna Shah</div>
+	<div class="title">Krishna <span>Shah</span></div>
 	<div class="row">
 		<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/krishna_shah.jpg"/></div>
 		<div class="team-member-bio">
@@ -29,7 +29,7 @@
 </div>
 
 <div class="main-content" id="vivek_patel">
-	<div class="title">VIVEK PATEL</div>
+	<div class="title">VIVEK <span>PATEL</span></div>
 	<div class="row">
 		<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/vivek_patel.jpg"/></div>
 		<div class="team-member-bio">
@@ -39,7 +39,7 @@
 </div>
 
 <div class="main-content" id="nilesh_patel">
-	<div class="title">NILESH PATEL</div>
+	<div class="title">NILESH <span>PATEL</span></div>
 	<div class="row">
 		<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/nilesh_patel.jpg"/></div>
 		<div class="team-member-bio">
@@ -55,20 +55,20 @@
 	<div class="sub-content-title">Our Team</div>
 	<div class="sub-content-description row">
 		<div class="team-member-container active" data-target="hirav_shah">
-			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/hirav_shah.jpg" style="border-color:#e4b237;"/></div>
-			<div class="member-name" style="color:#e4b237;">HIRAV SHAH</div>
+			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/hirav_shah.jpg"/></div>
+			<div class="member-name">HIRAV SHAH</div>
 		</div>
 		<div class="team-member-container" data-target="krishna_shah">
-			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/krishna_shah.jpg" style="border-color:#f15c34;"/></div>
-			<div class="member-name" style="color:#f15c34;">KRISHNA SHAH</div>
+			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/krishna_shah.jpg"/></div>
+			<div class="member-name">KRISHNA SHAH</div>
 		</div>
 		<div class="team-member-container" data-target="vivek_patel">
-			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/vivek_patel.jpg" style="border-color:#0d95d3;"/></div>
-			<div class="member-name" style="color:#0d95d3;">VIVEK PATEL</div>
+			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/vivek_patel.jpg"/></div>
+			<div class="member-name">VIVEK PATEL</div>
 		</div>
 		<div class="team-member-container" data-target="nilesh_patel">
-			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/nilesh_patel.jpg" style="border-color:#87499f;"/></div>
-			<div class="member-name" style="color:#87499f;">NILESH PATEL</div>
+			<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/nilesh_patel.jpg"/></div>
+			<div class="member-name">NILESH PATEL</div>
 		</div>
 	</div>
 </div>
