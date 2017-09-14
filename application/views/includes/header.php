@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
-    <title>CodeIgniter - <?php echo $pageTitle; ?></title>
+    <title>Moments | <?php echo $pageTitle; ?></title>
     <!-- CSS-->
     <link href="<?php echo base_url(); ?>html/css/style.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
@@ -30,6 +30,7 @@
     <div class="menu">
         <div class="menu-item"><a href="<?php echo base_url(); ?>home">Home</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>team">Our Team</a></div>
+        <div class="menu-item"><a href="<?php echo base_url(); ?>services">Services</a></div>
         <div class="menu-item"><a href="#">Gallery</a></div>
         <div class="menu-item"><a href="#">Clients</a></div>
         <div class="menu-item"><a href="#">Testimonial</a></div>
