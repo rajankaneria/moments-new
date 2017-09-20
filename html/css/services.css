@@ -85,3 +85,79 @@
     float: left;
     padding: 25px 10px;
 }
+
+.service-photo {
+    position: relative;
+}
+
+.service-photo img {
+    width: 100%;
+}
+
+.service-container {
+    background: none;
+}
+
+.service-photo {
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+    padding: 20%;
+    border: 3px solid #e73043;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    margin: 10%;
+}
+
+.service-container.active .service-photo{
+    background: rgba(231,48,67,1);
+    cursor: pointer;
+    border: 3px solid #822730;
+    margin: 0%;
+}
+
+.service-photo:hover {
+    background: rgba(231,48,67,1);
+    cursor: pointer;
+    /*border-color: white;*/
+    border: 3px solid #822730;
+
+}
+
+.service-photo:hover .image-red {
+    display: none;
+}
+.service-container.active .service-photo .image-red{
+    display: none;
+}
+
+
+.service-container.active .service-photo .image-white{
+    display: block;
+}
+.service-photo:hover .image-white {
+    display: block;
+}
+.service-photo .image-white {
+    display: none;
+}
+
+p.tagline {
+    text-align: center;
+    margin-top: 60px;
+    color: #cc2a3d;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.row.service-description {
+    padding-top: 10px;
+}
+.main-image img{
+    display: none;
+}
+.main-image img.active{
+    display: block;
+}

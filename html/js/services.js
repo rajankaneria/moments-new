@@ -10,6 +10,9 @@ $(function(){
 		$(this).addClass("active");
 		var target = $(this).data("target");
 
+		$(".main-image img").hide();
+		$(".main-image img#bgImage-"+target).show();
+
 
 		$(".main-content").animate({
 		    right: "-50%"
@@ -21,4 +24,9 @@ $(function(){
 			});
 		});
 	});
+
+
+
+
+
 });
