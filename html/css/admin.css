@@ -1,0 +1,235 @@
+/* Navbar ====================================== */
+nav .nav-wrapper{
+  overflow: hidden;
+}
+.logoutBtn.right {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.admin-header-area{
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+.navbar {
+  font-family: "Roboto", sans-serif;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%; }
+  /*================css for model=============================*/
+
+.input-field.col label {
+    margin-top: 8px;
+    left: 0.75rem;
+}
+.ADD{
+  float: right;
+  margin-bottom: 15px;
+  position: absolute;
+  right: 50px;
+  top: 170px;
+}
+section.content {
+  padding: 25px;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+/* Card ======================================== */
+.card {
+  padding: 25px;
+  background: #fff;
+  min-height: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; 
+}
+.card .card-inside-title {
+margin-top: 25px;
+margin-bottom: 15px;
+display: block;
+font-size: 15px;
+color: #000; }
+.card .card-inside-title small {
+color: #999;
+display: block;
+font-size: 11px;
+margin-top: 5px; }
+.card .header {
+  color: #555;
+  padding: 20px;
+  position: relative;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.35); }     
+.card .header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #111; }
+.card .header h2 small {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999;
+  line-height: 15px; }
+.card .header h2 small a {
+  font-weight: bold;
+  color: #777; }  
+.sidebar {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+  background: #fdfdfd;
+  width: 300px;
+  overflow: hidden;
+  display: inline-block;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 11 !important; }
+.sidebar .menu .list a {
+  color: #747474;
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  width: 100%;
+  padding: 10px 13px; }    
+.sidebar .menu .list a span {
+  margin: 7px 0 7px 12px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  overflow: hidden; }
+section.content {
+  margin-top: 115px;
+}
+
+
+/*======== admin LogIn ===============*/
+.login-form-area{
+    width: 35%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    margin-top: 25px;
+    padding: 25px;
+    background: ghostwhite;
+    border: 1px solid #9f9f9f;
+    padding-bottom: 50px;
+    box-shadow: 0px 5px 20px rgba(122, 122, 122, 0.50);
+}
+a#addTourButton {
+    background: #eee;
+    border: 1px solid rgba(188, 188, 188, 0.58);
+}
+#addBannerBtn{
+     background: #eee;
+    border: 1px solid rgba(188, 188, 188, 0.58);
+}
+.dropdown-content li>a, .dropdown-content li>span{
+  color:#141414;
+}
+
+.login-page {
+    padding: 50px 0px 0px;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: 1px solid #141414;
+  -webkit-box-shadow: 0 1px 0 0 #141414;
+  box-shadow: 0 1px 0 0 #141414;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+  color: #141414;
+  font-weight: 500;
+}
+.btn-login-admin {
+    width: 100%;
+    background: #141414;
+    border: 1px solid #141414;
+}
+.btn-login-admin:hover,.btn-login-admin:focus,.btn-login-admin:active {
+    width: 100%;
+    color: #141414;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #141414;
+}
+/*=========== Admin Responsive Area =========*/
+ 
+
+.admin-menu-slide-logo{
+  background-color: #eee;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+}
+.admin-navigation{
+  background-color: #fff !important;
+}
+.admin-navigation li:first-child{
+  background: #eee;
+  padding: 25px;
+}
+.admin-navigation li{
+  background: transparent;
+}
+.admin-navigation li:hover{
+  background: rgba(38,38,38,0.1);
+}
+.mobile-menu-btn {
+  background: #ddd;
+  color: #000;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  z-index: 100;
+  padding: 11px 15px;
+  border-radius: 50px;
+  padding-top: 15px;
+}
+.active-menu{
+  background: rgba(55,55,55,0.2);
+}
+/**========== Mobile Responsive ============*/
+@media(max-width: 768px){
+  section.content{
+    padding: 15px;
+  }
+  .card{
+    padding: 15px;
+  }
+  table.responsive-table th{
+    text-align: left;
+  }
+  table.responsive-table tbody tr:nth-child(odd){
+    background-color: #eee;
+  }
+  .login-form-area{
+    width: 75%;
+  }
+}
+.blue {background:#000 !important;float: right;}
+.page-title{font-size: 20px !important;}
