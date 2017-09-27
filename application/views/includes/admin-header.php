@@ -42,7 +42,7 @@
           </div>
       </li>  
       <li><a href="<?php echo base_url(); ?>admin/folderType">Folder Type</a></li>
-      <li><a href="<?php echo base_url(); ?>admin/mainFolder">Main Folder</a></li>
+      <li><a href="<?php echo base_url(); ?>admin/folderDashboard">Main Folder</a></li>
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
