@@ -4,13 +4,31 @@
 */
 class Admin extends CI_Controller
 {
+
+	public function index()
+	{		
+		$headerData = array(
+			"pageTitle" => "Admin Login",
+			"stylesheet" => array("admin-login.css")
+		);
+		$footerData = array(
+			"jsFiles" => array("admin.js")
+		);
+		$viewData = array(
+			"viewName" => "admin-login",
+            "viewData" => array(),
+			"headerData" => $headerData,
+			"footerData" => $footerData	
+		);
+		$this->load->view('admin_template',$viewData);
+	}
 	
-	public function typeDashboard(){
+	public function folderType(){
 		$this->load->model('admin_model');
 		$allTypeData=$this->admin_model->allTypeData();		
 
 		$headerData = array(
-			"pageTitle" => "Folder Type",
+			"pageTitle" => "Folder Type", 
 			"stylesheet" => array("header.css","admin.css")
 		);
 		$footerData = array(
@@ -33,9 +51,10 @@ class Admin extends CI_Controller
 	}
 	public function updateType(){
 		$data=$_POST['data'];
-		$id=$_POST['typeId'];
+		$id=$data['id'];
 		$this->load->model("admin_model");
-		$this->admin_model->updateType($data,$id);
+		$result=$this->admin_model->updateType($data,$id);
+		echo json_encode($result);
 		
 	}
 	public function deleteType($id){	

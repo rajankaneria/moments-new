@@ -1,16 +1,48 @@
 /* Navbar ====================================== */
+body{
+  background: #11aee5;
+}
+.sidebar-logo{
+  padding: 25px;
+}
 nav .nav-wrapper{
   overflow: hidden;
 }
-.logoutBtn.right {
+nav .button-collapse {
+    float: left;
     position: absolute;
-    right: 50px;
+    z-index: 1;
+    margin: 0 18px;
+    color: #000;
+    left: 0;
     top: 0;
+    padding: 20px;
+}
+.button-collapse{
+  display: block !important;
+}
+.logoutBtn.right {
+    /*position: absolute;
+    right: 0;
+    top: 0%;
+    padding: 0px 15px;*/
+    position: absolute;
+    z-index: 1;
+    color: #000;
+    top: 0px;
+    padding: 0px 50px 0px;
+    float: right !important;
+    right: 0;
+}
+.logoutBtn.right a{
+  font-size: 28px;
+  color: #000 !important;
 }
 .admin-header-area{
-  position: fixed;
+  position: relative;
   top: 0px;
   z-index: 100;
+  overflow: hidden;
 }
 .navbar {
   font-family: "Roboto", sans-serif;
@@ -48,6 +80,10 @@ section.content {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
 
+.modal-footer a{
+  background: #11aee5;
+  margin:0px 25px !important;
+}
 /* Card ======================================== */
 .card {
   padding: 25px;
@@ -230,6 +266,10 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   .login-form-area{
     width: 75%;
   }
+  .logoutBtn.right{
+    padding: 0px 25px 0px;
+  }
+  .page-title{
+    font-size: 22px !important;
+  }
 }
-.blue {background:#000 !important;float: right;}
-.page-title{font-size: 20px !important;}

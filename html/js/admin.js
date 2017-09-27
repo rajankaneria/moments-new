@@ -121,17 +121,18 @@ $(function(){
 			"name":$("#name").val()
 		};
 		$.post(baseURL+"admin/addType/",{data:data},function(data){
-			var data=$.parseJSON(data);
+			//var data=$.parseJSON(data);
 		});
 
 	});
 
 	$("#updateType").on("click",function(){
 		var data={
+			"id":$("#id").val(),
 			"name":$("#name").val()
 		};
 		$.post(baseURL+"admin/updateType/",{data:data},function(data){
-			var data=$.parseJSON(data);
+			$.parseJSON(data);
 		});
 
 	});
@@ -264,5 +265,18 @@ $(function(){
 
 	});
 	/*End Testimonial*/
+
+	/*===== Navigation Menu =====*/
+
+	 $('.button-collapse').sideNav({
+	      menuWidth: 300, // Default is 300
+	      edge: 'left', // Choose the horizontal origin
+	      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	      draggable: true, // Choose whether you can drag to open on touch screens,
+	      onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+	      onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+	    }
+	  );
+
 
 });
