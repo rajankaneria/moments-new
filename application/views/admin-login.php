@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="admin-form-area">
 				<div class="row">
-					<form>
+					<form method="POST">
 						<div class="input-field col s12">
 				          <input id="email" name="email" type="text" class="validate" required="required">
 				          <label for="email">Email or Username</label>
