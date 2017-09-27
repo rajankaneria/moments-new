@@ -171,19 +171,21 @@ $(function(){
 			"name":$("#name").val()
 		};
 		$.post(baseURL+"admin/addFolder/",{data:data},function(data){
-			var data=$.parseJSON(data);
+			//var data=$.parseJSON(data);
+			window.location.reload();
 		});
 
 	});
 
 	$("#updateFolder").on("click",function(){
 	var data={
-		"id":$("#id").val(),
-		"type_id":$("#type_id").val(),
-		"name":$("#name").val()
+		"id":$("#editFolderModal #id").val(),
+		"type_id":$("#editFolderModal #type_id").val(),
+		"name":$("#editFolderModal #name").val()
 	};
-	$.post(baseURL+"admin/addFolder/",{data:data},function(data){
-		var data=$.parseJSON(data);
+	$.post(baseURL+"admin/updateFolder/",{data:data},function(data){
+		//var data=$.parseJSON(data);
+		//window.location.reload();
 	});
 
 });

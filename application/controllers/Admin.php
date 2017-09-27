@@ -87,7 +87,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin_templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 
 	public function addFolder(){
@@ -207,6 +207,7 @@ class Admin extends CI_Controller
 			$output=$this->admin_model->editImage($editId);
 			$this->load->view("updateImage",$output);
 		}	
+
 
 	/*==================================Client Logo=======================================*/
 	public function clientDashboard(){
