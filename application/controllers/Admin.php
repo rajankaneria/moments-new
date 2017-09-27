@@ -4,8 +4,26 @@
 */
 class Admin extends CI_Controller
 {
+
+	public function index()
+	{		
+		$headerData = array(
+			"pageTitle" => "Admin Login",
+			"stylesheet" => array("admin-login.css")
+		);
+		$footerData = array(
+			"jsFiles" => array("admin.js")
+		);
+		$viewData = array(
+			"viewName" => "admin-login",
+            "viewData" => array(),
+			"headerData" => $headerData,
+			"footerData" => $footerData	
+		);
+		$this->load->view('admin_template',$viewData);
+	}
 	
-	public function typeDashboard(){
+	public function folderType(){
 		$this->load->model('admin_model');
 		$allTypeData=$this->admin_model->allTypeData();		
 
