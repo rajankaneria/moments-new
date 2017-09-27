@@ -86,13 +86,13 @@ $(function(){
 		var formData=new FormData($("#updateImageForm")[0]);
 		$.ajax({
 				url:baseURL+"admin/updateImage/",
-				data:formdata,
+				data:formData,
 				type:"POST",
 				processData:false,
 				contentType:false,
 				success:function(result){
-					alert("Update data Successfully....");
-					window.location.reload();
+					//alert("Update data Successfully....");
+					//window.location.reload();
 				}
 		});
 

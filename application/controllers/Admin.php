@@ -194,7 +194,8 @@ class Admin extends CI_Controller
 
 		$image = $imageID."_folderImage.".pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);		
 		$result=array(					
-					"folder_id"=>$_POST['folder_id']									
+					"type_id"=>$_POST['type_id'],
+			         "folder_id"=>$_POST['sub_type']								
 			);
 			if($_FILES['image']['name']!=""){			
 				$result["image"] = $image;
