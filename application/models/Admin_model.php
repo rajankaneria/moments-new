@@ -27,7 +27,7 @@ class Admin_model extends CI_Model
 		return $output;
 	}
 	/*============================Folder===================================================*/
-/*	public function addFolder($folderData){
+	public function addFolder($folderData){
 		$this->db->insert("folder",$folderData);
 	}
 	public function updateFolder($folderData,$folderId){
@@ -47,7 +47,7 @@ class Admin_model extends CI_Model
 		$query=$this->db->query("select * from folder");
 		$output=$query->result_array();
 		return $output;
-	}*/
+	}
 
 	/*=============================Image===================================================*/
 

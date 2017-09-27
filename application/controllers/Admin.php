@@ -70,7 +70,7 @@ class Admin extends CI_Controller
 
 /*=================================Folder==================================================*/
 
-	/*public function folderDashboard(){
+	public function folderDashboard(){
 		$this->load->model("admin_model");
 		$allFolderData=$this->admin_model->allFolderData();		
 
@@ -87,7 +87,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
 	public function addFolder(){
@@ -112,9 +112,9 @@ class Admin extends CI_Controller
 		$output=$this->admin_model->editFolder($editId);
 		$this->load->view("updateFolder",$output);
 	}
-*/
+
 	/*=========================================Image=======================================*/
-	/*public function imageDashboard(){
+	public function imageDashboard(){
 		$this->load->model("admin_model");
 		$allImageData=$this->admin_model->allImageData();		
 
@@ -132,7 +132,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
 	public function addImage(){
@@ -206,11 +206,10 @@ class Admin extends CI_Controller
 			$this->load->model("admin_model");
 			$output=$this->admin_model->editImage($editId);
 			$this->load->view("updateImage",$output);
-		}	*/
-
+		}	
 
 	/*==================================Client Logo=======================================*/
-	/*public function clientDashboard(){
+	public function clientDashboard(){
 		$this->load->model("admin_model");
 		$allClientData=$this->admin_model->allClientData();		
 
@@ -227,7 +226,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
 	public function addClient(){
@@ -301,9 +300,9 @@ class Admin extends CI_Controller
 			$this->load->model("admin_model");
 			$output=$this->admin_model->editClient($editId);
 			$this->load->view("updateClient",$output);
-		}	*/
+		}	
 		/*=================Testimonials============================================*/
-		/*public function testimonialDashboard(){
+		public function testimonialDashboard(){
 		$this->load->model("admin_model");
 		$allTestData=$this->admin_model->allTestData();		
 
@@ -320,14 +319,13 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
-	    
-	    public function testimonials()
-		{	
-		$this->load->model("admin_model");	
-		$testData=$this->admin_model->testDetails();
+	public function testimonials()
+	{	
+		$this->load->model("Admin_model");	
+		$testData=$this->Admin_model->testDetails();
 		$headerData = array(
 			"pageTitle" => "Testimonials",
 			"stylesheet" => array("admin.css","header.css")
@@ -341,7 +339,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 	public function addTest(){
 		$this->load->model("admin_model");
@@ -401,6 +399,6 @@ class Admin extends CI_Controller
 			$data=$this->admin_model->editTest($testID);
 			$this->load->view('updateTest',$data);
 		}
-*/
+
 }
 ?>
