@@ -69,7 +69,7 @@ class Admin extends CI_Controller
 
 /*=================================Folder==================================================*/
 
-	/*public function folderDashboard(){
+	public function mainFolder(){
 		$this->load->model("admin_model");
 		$allFolderData=$this->admin_model->allFolderData();		
 
@@ -81,12 +81,12 @@ class Admin extends CI_Controller
 			"jsFiles" => array("admin.js")
 		);
 		$viewData = array(
-			"viewName" => "folder_dashboard",
+			"viewName" => "mainFolder",
             "viewData" => array("allFolderData"=>$allFolderData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 
 	public function addFolder(){
@@ -111,7 +111,7 @@ class Admin extends CI_Controller
 		$output=$this->admin_model->editFolder($editId);
 		$this->load->view("updateFolder",$output);
 	}
-*/
+
 	/*=========================================Image=======================================*/
 	/*public function imageDashboard(){
 		$this->load->model("admin_model");
