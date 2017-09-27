@@ -1,0 +1,26 @@
+body{
+	background: #0892b2 !important;
+}
+.login-page{
+	padding: 50px 0px 25px;
+}
+.admin-login-box {
+    width: 30%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+}
+.admin-login-btn {
+    background: #0892b2;
+    width: 100%;
+}
+.admin-login-btn:hover {
+    background: #11ade4;
+    width: 100%;
+}
+.bottom{
+	background: linear-gradient(90deg,#f27893,#ea7832,#fdc740,#a1cd69,#a62189,#34b29e,#16b7eb,#23afbe);
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+}

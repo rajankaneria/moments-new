@@ -33,23 +33,48 @@
 
 </head>
 
-<body class="grey lighten-2" >
-    <?php if($this->session->userdata("email")){ ?>
+<body>
+    <?php //if($this->session->userdata("email")){ ?>
+     <ul id="slide-out" class="side-nav">
+      <li>
+          <div class="row sidebar-logo">
+              <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/event_logo.png" height="100px" id="logo"></a>
+          </div>
+      </li>  
+      <li><a href="<?php echo base_url(); ?>admin/folderType">Folder Type</a></li>
+      <li><a href="<?php echo base_url(); ?>admin/mainFolder">Main Folder</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
    <nav class="admin-header-area">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         <div class="nav-wrapper">
-          <a href="<?php echo base_url(); ?>admin/admin_tour" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>          
+          <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/event_logo.png" height="100px" id="logo"></a>
         </div>
         <div class="logoutBtn right"> 
-         <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true" style="font-size: 35px;color: #000;"></i></a>  
+         <a href="<?php echo base_url(); ?>admin/logout/"><i class="fa fa-power-off" aria-hidden="true"></i></a>  
         </div> 
     </nav>
-    <?php } else{ ?>
+    <?php // } else{ ?>
      
-      <div class="login-page">
+      <!-- <div class="login-page">
         <center>
-        <a href="<?php echo base_url(); ?>home" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/logo_black.png" height="100px" id="logo"></a>
+        <a href="<?php echo base_url(); ?>home" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/event_logo.png" height="100px" id="logo"></a>
         </center>
-      </div>
+      </div> -->
     
-    <?php } ?>
+    <?php // } ?>
         
