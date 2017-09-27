@@ -1,9 +1,6 @@
 <div class="row">
 <form id="addImageForm" method="post" enctype="multipart/form-data">
 	<div class="row">
-    <center><h5>Add Gallery Image</h5></center>
-  </div>
-  <div class="row">
     <div class="input-field col s12">			  
 	    <select name="type_id" id="type_id">
         <option value="" selected="selected">Select</option>
