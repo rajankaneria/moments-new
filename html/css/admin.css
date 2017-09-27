@@ -2,6 +2,9 @@
 body{
   background: #11aee5;
 }
+.card-panel{
+  overflow: hidden;
+}
 .sidebar-logo{
   padding: 25px;
 }
@@ -292,5 +295,8 @@ div#addTypeModal h5{
   }
   .page-title{
     font-size: 22px !important;
+  }
+  .modal-content a {
+    width: 100%;
   }
 }
