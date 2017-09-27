@@ -12,7 +12,7 @@ $(function(){
 		var formData=new FormData($("#addClientForm")[0]);
 		$.ajax({
 				url:baseURL+"admin/addClient/",
-				data:formdata,
+				data:formData,
 				type:"POST",
 				processData:false,
 				contentType:false,
@@ -26,8 +26,8 @@ $(function(){
 	$("#updateClient").on("click",function(){
 		var formData=new FormData($("#updateClientForm")[0]);
 		$.ajax({
-				url:baseURL+"admin/aupdateClient/",
-				data:formdata,
+				url:baseURL+"admin/updateClient/",
+				data:formData,
 				type:"POST",
 				processData:false,
 				contentType:false,
@@ -163,12 +163,13 @@ $(function(){
 	/*start folder*/
 	$("#addFolderBtn").on("click",function(){
 		$("#addFolderModal").modal('open');
+		$('select').material_select();
 	});
 
 	$("#addFolder").on("click",function(){
 		var data={
-			"type_id":$("#type_id").val(),
-			"name":$("#name").val()
+			"type_id":$("#addFolderModal #type_id").val(),
+			"name":$("#addFolderModal #name").val()
 		};
 		$.post(baseURL+"admin/addFolder/",{data:data},function(data){
 			//var data=$.parseJSON(data);
@@ -178,17 +179,17 @@ $(function(){
 	});
 
 	$("#updateFolder").on("click",function(){
-	var data={
-		"id":$("#editFolderModal #id").val(),
-		"type_id":$("#editFolderModal #type_id").val(),
-		"name":$("#editFolderModal #name").val()
-	};
-	$.post(baseURL+"admin/updateFolder/",{data:data},function(data){
-		//var data=$.parseJSON(data);
-		//window.location.reload();
-	});
+		var data={
+			"id":$("#editFolderModal #id").val(),
+			"type_id":$("#editFolderModal #type_id").val(),
+			"name":$("#editFolderModal #name").val()
+		};
+		$.post(baseURL+"admin/updateFolder/",{data:data},function(data){
+			//var data=$.parseJSON(data);
+			window.location.reload();
+		});
 
-});
+	});
 
 	$(".folder-delete-btn").on("click",function(){
 		var folderID=$(this).data('folder-id');
@@ -204,6 +205,7 @@ $(function(){
 		$.post(baseURL+"admin/editFolder/"+folderID,function(data){
 			$("#editFolderModal .modal-content").html(data);
 			Materialize.updateTextFields();
+			$('select').material_select();
 		});
 	});
 
@@ -219,7 +221,7 @@ $(function(){
 	$("#sendTestData").on("click",function(){
 		var formData=new FormData($("#addTestForm")[0]);
 		$.ajax({
-			url:baseURL+"Testimonials/addTest/",
+			url:baseURL+"Admin/addTest/",
 			data:formData,
 			type:"POST",
 			processData:false,
@@ -234,7 +236,7 @@ $(function(){
 	$("#updateTest").on("click",function(){
 		var formData=new FormData($("#updateTestForm")[0]);
 		$.ajax({
-			url:baseURL+"Testimonials/updateTest/",
+			url:baseURL+"Admin/updateTest/",
 			data:formData,
 			type:"POST",
 			processData:false,
@@ -251,7 +253,7 @@ $(function(){
 		$("#editTestModal .modal-content").html("");
 		$("#editTestModal").modal('open');
 		var editTest=$(this).data('test-id');
-		$.post(baseURL+"Testimonials/editTest/"+editTest,function(data){
+		$.post(baseURL+"Admin/editTest/"+editTest,function(data){
 			$("#editTestModal .modal-content").html(data);
 			Materialize.updateTextFields();
 		});	
@@ -261,7 +263,7 @@ $(function(){
 	$(".test-delete-btn").on("click",function(){
 	var dltTest=$(this).data('test-id');
 	if(confirm("Do you want to delete this Record....")){
-		$.post(baseURL+"Testimonials/deleteTest/"+dltTest,function(data){
+		$.post(baseURL+"Admin/deleteTest/"+dltTest,function(data){
 			$("#testid"+dltTest).remove();
 		});		
 	}

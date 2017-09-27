@@ -23,7 +23,7 @@ class Admin extends CI_Controller
 		$this->load->view('admin_template',$viewData);
 	}
 	
-	public function folderType(){
+	public function gallery_type(){
 		$this->load->model('admin_model');
 		$allTypeData=$this->admin_model->allTypeData();		
 
@@ -71,9 +71,13 @@ class Admin extends CI_Controller
 /*=================================Folder==================================================*/
 
 
-	public function folderDashboard(){
+	public function gallery_folder(){
 
 		$this->load->model("admin_model");
+		$this->load->model("gallery_model");
+
+		$galleryType = $this->gallery_model->getFolderType();
+
 		$allFolderData=$this->admin_model->allFolderData();		
 
 		$headerData = array(
@@ -85,7 +89,7 @@ class Admin extends CI_Controller
 		);
 		$viewData = array(
 			"viewName" => "folder_dashboard",
-            "viewData" => array("allFolderData"=>$allFolderData),
+            "viewData" => array("allFolderData"=>$allFolderData,"gallery_type"=>$galleryType),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
@@ -109,9 +113,14 @@ class Admin extends CI_Controller
 		$this->load->model("admin_model");
 		$this->admin_model->deleteFolder($deleteId);
 	}
-	public function editFolder($editId){		
+	public function editFolder($editId){	
+		$this->load->model("gallery_model");	
 		$this->load->model("admin_model");
+
+		$galleryType = $this->gallery_model->getFolderType();
+
 		$output=$this->admin_model->editFolder($editId);
+		$output["type"] = $galleryType;
 		$this->load->view("updateFolder",$output);
 	}
 
@@ -229,7 +238,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin_templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 
 	public function addClient(){
@@ -274,7 +283,7 @@ class Admin extends CI_Controller
 
 		$image = $clientID."_clientImage.".pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);		
 		$result=array(					
-					"folder_id"=>$_POST['folder_id']									
+					"name"=>$_POST['name']									
 			);
 			if($_FILES['image']['name']!=""){			
 				$result["image"] = $image;
@@ -304,31 +313,12 @@ class Admin extends CI_Controller
 			$output=$this->admin_model->editClient($editId);
 			$this->load->view("updateClient",$output);
 		}	
-		/*=================Testimonials============================================*/
-		public function testimonialDashboard(){
-		$this->load->model("admin_model");
-		$allTestData=$this->admin_model->allTestData();		
-
-		$headerData = array(
-			"pageTitle" => "Testimonials",
-			"stylesheet" => array("header.css","admin.css")
-		);
-		$footerData = array(
-			"jsFiles" => array("admin.js")
-		);
-		$viewData = array(
-			"viewName" => "testimonial_dashboard",
-            "viewData" => array("allTestData"=>$allTestData),
-			"headerData" => $headerData,
-			"footerData" => $footerData	
-		);
-		$this->load->view('admin_templete',$viewData);
-	}
+	/*=================Testimonials============================================*/
 
 	public function testimonials()
 	{	
 		$this->load->model("Admin_model");	
-		$testData=$this->Admin_model->testDetails();
+		$testData=$this->Admin_model->allTestData();
 		$headerData = array(
 			"pageTitle" => "Testimonials",
 			"stylesheet" => array("admin.css","header.css")
@@ -337,7 +327,7 @@ class Admin extends CI_Controller
 			"jsFiles" => array("admin.js","header.js")
 		);
 		$viewData = array(
-			"viewName" => "testimonial-dashboard",
+			"viewName" => "testimonial_dashboard",
             "viewData" => array("testData"=>$testData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
@@ -355,7 +345,7 @@ class Admin extends CI_Controller
 		$testImage=$testID."_testImage.".pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
 		$updateData=array("image"=>$testImage);
 
-		$this->testimonial_model->updateTest($updateData,$testID);
+		$this->admin_model->updateTest($updateData,$testID);
 		$config['file_name']=$testID."_testImage";
 		$config['upload_path']='C:\wamp\www\moments-new\html\images\testimonials';
 		$config['allowed_types']='gif|png|jpg';
