@@ -229,7 +229,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin_templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 
 	public function addClient(){
@@ -304,31 +304,12 @@ class Admin extends CI_Controller
 			$output=$this->admin_model->editClient($editId);
 			$this->load->view("updateClient",$output);
 		}	
-		/*=================Testimonials============================================*/
-		public function testimonialDashboard(){
-		$this->load->model("admin_model");
-		$allTestData=$this->admin_model->allTestData();		
-
-		$headerData = array(
-			"pageTitle" => "Testimonials",
-			"stylesheet" => array("header.css","admin.css")
-		);
-		$footerData = array(
-			"jsFiles" => array("admin.js")
-		);
-		$viewData = array(
-			"viewName" => "testimonial_dashboard",
-            "viewData" => array("allTestData"=>$allTestData),
-			"headerData" => $headerData,
-			"footerData" => $footerData	
-		);
-		$this->load->view('admin_templete',$viewData);
-	}
+	/*=================Testimonials============================================*/
 
 	public function testimonials()
 	{	
 		$this->load->model("Admin_model");	
-		$testData=$this->Admin_model->testDetails();
+		$testData=$this->Admin_model->allTestData();
 		$headerData = array(
 			"pageTitle" => "Testimonials",
 			"stylesheet" => array("admin.css","header.css")
@@ -337,7 +318,7 @@ class Admin extends CI_Controller
 			"jsFiles" => array("admin.js","header.js")
 		);
 		$viewData = array(
-			"viewName" => "testimonial-dashboard",
+			"viewName" => "testimonial_dashboard",
             "viewData" => array("testData"=>$testData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	

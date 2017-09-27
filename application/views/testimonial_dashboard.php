@@ -20,7 +20,7 @@
    		</tr>
     </thead>
     <tbody>
-      <?php foreach ($allTestData as $key => $testRow) { ?>
+      <?php foreach ($testData as $key => $testRow) { ?>
       <tr id="testid<?php echo $testRow['id']; ?>">  
          <td><?php echo $testRow['id']; ?></td>         
         <td><?php echo $testRow['title']; ?></td>
