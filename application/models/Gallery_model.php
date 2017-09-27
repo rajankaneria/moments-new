@@ -7,5 +7,11 @@ class Gallery_model extends CI_Model
 		$output = $query->result_array();
 		return $output;
 	}
+
+	public function getFolders($typeID){
+		$query = $this->db->query("select * from folder where type_id='$typeID'");
+		$output = $query->result_array();
+		return $output;
+	}
 }
 

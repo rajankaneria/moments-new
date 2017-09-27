@@ -60,6 +60,7 @@ $(function(){
 	/*folder image start*/
 	$("#addImageBtn").on("click",function(){
 		$("#addImageModal").modal('open');
+		$('select').material_select();
 	});
 
 	$("#addImage").on("click",function(){
@@ -284,4 +285,15 @@ $(function(){
 	  );
 
 
+});
+
+
+
+
+$("#addImageForm #type_id").on("change",function(){
+	var typeID = $(this).val();
+	$("#sub_type").removeAttr("disabled");
+	var dropdownList = $("#type_"+typeID).html();
+	$("#sub_type").html(dropdownList);
+	$('#sub_type').material_select();
 });

@@ -1,4 +1,6 @@
 <div class="container">
+
+
  <div class="row">
  <div class="card-panel">
   <div class="page-header">
@@ -38,7 +40,7 @@
 <!-- Modal Structure -->
   <div id="addImageModal" class="modal">
     <div class="modal-content">
-      <?php $this->load->view("addImage"); ?>
+      <?php $this->load->view("addImage",array("galleryType"=>$galleryType,"folderList"=>$folderList)); ?>
     </div>
     <div class="modal-footer">
       <a id="addImage" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
