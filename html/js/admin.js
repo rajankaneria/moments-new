@@ -118,7 +118,7 @@ $(function(){
 
 	$("#addType").on("click",function(){
 		var data={
-			"name":$("#name").val()
+			"name":$("#addTypeForm #name").val()
 		};
 		$.post(baseURL+"admin/addType/",{data:data},function(data){
 			//var data=$.parseJSON(data);
