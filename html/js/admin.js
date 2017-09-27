@@ -122,6 +122,7 @@ $(function(){
 		};
 		$.post(baseURL+"admin/addType/",{data:data},function(data){
 			//var data=$.parseJSON(data);
+			window.location.reload();
 		});
 
 	});
@@ -132,7 +133,7 @@ $(function(){
 			"name":$("#editTypeModal #name").val()
 		};
 		$.post(baseURL+"admin/updateType/",{data:data},function(data){
-			$.parseJSON(data);
+			window.location.reload();
 		});
 
 	});
