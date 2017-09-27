@@ -27,7 +27,7 @@ class Admin_model extends CI_Model
 		return $output;
 	}
 	/*============================Folder===================================================*/
-/*	public function addFolder($folderData){
+	public function addFolder($folderData){
 		$this->db->insert("folder",$folderData);
 	}
 	public function updateFolder($folderData,$folderId){
@@ -47,11 +47,11 @@ class Admin_model extends CI_Model
 		$query=$this->db->query("select * from folder");
 		$output=$query->result_array();
 		return $output;
-	}*/
+	}
 
 	/*=============================Image===================================================*/
 
-	/*public function addImage($imageData){
+	public function addImage($imageData){
 		$this->db->insert("image",$imageData);
 		$id=$this->db->insert_id();
 		return $id;
@@ -73,12 +73,12 @@ class Admin_model extends CI_Model
 		$query=$this->db->query("select * from image");
 		$output=$query->result_array();
 		return $output;
-	}*/
+	}
 
 
 	/*=============================Client Logo=============================================*/
 
-	/*public function addClient($clientData){
+	public function addClient($clientData){
 		$this->db->insert("client_logo",$clientData);
 		$id=$this->db->insert_id();
 		return $id;
@@ -101,10 +101,10 @@ class Admin_model extends CI_Model
 		$output=$query->result_array();
 		return $output;
 	}
-*/
+
 	/*=============================Testimonials============================================*/
 
-	/*public function addTest($testData){
+	public function addTest($testData){
 		$this->db->insert("testimonials",$testData);
 		$id=$this->db->insert_id();
 		return $id;
@@ -126,7 +126,7 @@ class Admin_model extends CI_Model
 		$query=$this->db->query("select * from testimonials");
 		$output=$query->result_array();
 		return $output;
-	}*/
+	}
 
   /*=====================================================================================*/
 
