@@ -42,9 +42,11 @@ $(function(){
 
 	$(".delete-btn").on("click",function(){
 		var clientID=$(this).data('client-id');
+		if(confirm("Do you want to delete this records..??")){
 		$.post(baseURL+"admin/deleteClient/"+clientID,function(data){
 			$("#client-id"+clientID).remove();
 		});
+		}
 	});
 
 	$(".edit-btn").on("click",function(){
@@ -134,6 +136,9 @@ $(function(){
 			else if(data.status=="fail"){
 				alert("Your Main Folder added Fail...");
 				window.location.reload();
+			}
+			else{
+				console.log(data);
 			}
 			
 		});
@@ -285,6 +290,33 @@ $(function(){
 
 	});
 	/*End Testimonial*/
+
+
+
+
+
+	/*=============Login=============*/
+	$("#login").on("click",function(){
+		var data={
+			"email":$("#email").val(),
+			"password":$("#password").val()
+		};
+		$.post(baseURL+"Admin/doLogin/",{data:data},function(data){
+			var data=$.parseJSON(data);
+		if(data.status=="ok"){
+			window.location.href=baseURL+"Admin/gallery_type";
+		}
+		else if(data.status="fail"){
+			alert("Login Fail...");
+			window.location.href="#!";
+		}
+		else{console.log(data);
+		}
+
+		});
+
+	});
+	/*===============================*/
 
 	/*===== Navigation Menu =====*/
 

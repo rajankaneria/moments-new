@@ -69,8 +69,6 @@ class Admin extends CI_Controller
 
 
 /*=================================Folder==================================================*/
-
-
 	public function gallery_folder(){
 
 		$this->load->model("admin_model");
@@ -186,7 +184,6 @@ class Admin extends CI_Controller
 	    $this->load->library('upload', $config);
 	    $this->upload->do_upload('image');
 	}
-
 
 	public function updateImage(){
 
@@ -399,6 +396,12 @@ class Admin extends CI_Controller
 			$this->load->model('admin_model');
 			$data=$this->admin_model->editTest($testID);
 			$this->load->view('updateTest',$data);
+		}
+		public function doLogin(){
+			$data=$_POST['data'];
+			$this->load->model("admin_model");
+			$output=$this->admin_model->login($data);
+			echo json_encode($output);
 		}
 
 }
