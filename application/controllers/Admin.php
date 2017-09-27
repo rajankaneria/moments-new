@@ -10,7 +10,7 @@ class Admin extends CI_Controller
 		$allTypeData=$this->admin_model->allTypeData();		
 
 		$headerData = array(
-			"pageTitle" => "Folder Type",
+			"pageTitle" => "Folder Type", 
 			"stylesheet" => array("header.css","admin.css")
 		);
 		$footerData = array(
@@ -33,9 +33,10 @@ class Admin extends CI_Controller
 	}
 	public function updateType(){
 		$data=$_POST['data'];
-		$id=$_POST['typeId'];
+		$id=$data['id'];
 		$this->load->model("admin_model");
-		$this->admin_model->updateType($data,$id);
+		$result=$this->admin_model->updateType($data,$id);
+		echo json_encode($result);
 		
 	}
 	public function deleteType($id){	

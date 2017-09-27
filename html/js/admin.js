@@ -121,17 +121,18 @@ $(function(){
 			"name":$("#name").val()
 		};
 		$.post(baseURL+"admin/addType/",{data:data},function(data){
-			var data=$.parseJSON(data);
+			//var data=$.parseJSON(data);
 		});
 
 	});
 
 	$("#updateType").on("click",function(){
 		var data={
+			"id":$("#id").val(),
 			"name":$("#name").val()
 		};
 		$.post(baseURL+"admin/updateType/",{data:data},function(data){
-			var data=$.parseJSON(data);
+			$.parseJSON(data);
 		});
 
 	});
