@@ -4,9 +4,9 @@
 
  <div class="card-panel">
 
-  <div class="page-header">
-      <div class="page-title">Folder Management</div>      
-      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addFolderBtn">Add</a></div>
+  <div class="page-header row">
+      <div class="page-title col s8 m10">Folder Management</div>      
+      <div class="page-button col s4 m2"><a class="waves-effect waves-light btn blue" id="addFolderBtn">Add</a></div>
   </div>
    <div class="page-content">
    	<table border="1" class="responsive-table centered">
@@ -43,7 +43,7 @@
     <div class="modal-content">
       <?php $this->load->view("addFolder",array("type"=>$gallery_type)); ?>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer centered">
       <a id="addFolder" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
     </div>
   </div>

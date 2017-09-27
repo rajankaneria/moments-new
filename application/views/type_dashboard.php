@@ -6,7 +6,7 @@
 
   <div class="page-header row">
       <div class="page-title col s8 m10">Type Management</div>      
-      <div class="page-button col s4 m2"><a class="waves-effect waves-light btn black" id="addTypeBtn">Add</a></div>
+      <div class="page-button col s4 m2"><a class="waves-effect waves-light btn blue" id="addTypeBtn">Add</a></div>
   </div>
    <div class="page-content">
    	<table border="1" class="responsive-table centered">

@@ -82,7 +82,13 @@ section.content {
 
 .modal-footer a{
   background: #11aee5;
+  color: #fff;
   margin:0px 25px !important;
+  text-align: center;
+  display: block;
+}
+.modal-content .row{
+  margin: 0;
 }
 /* Card ======================================== */
 .card {
@@ -215,7 +221,9 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }
 /*=========== Admin Responsive Area =========*/
  
-
+.page-title{
+  font-size: 24px;
+}
 .admin-menu-slide-logo{
   background-color: #eee;
   margin: 0 auto;
@@ -249,6 +257,19 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 .active-menu{
   background: rgba(55,55,55,0.2);
 }
+
+
+/*Galllery type =============*/
+
+div#addTypeModal h5{
+  text-align: center;
+}
+
+
+
+
+
+
 /**========== Mobile Responsive ============*/
 @media(max-width: 768px){
   section.content{
