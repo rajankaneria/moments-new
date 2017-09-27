@@ -70,7 +70,9 @@ class Admin extends CI_Controller
 
 /*=================================Folder==================================================*/
 
+
 	public function folderDashboard(){
+
 		$this->load->model("admin_model");
 		$allFolderData=$this->admin_model->allFolderData();		
 
@@ -82,7 +84,7 @@ class Admin extends CI_Controller
 			"jsFiles" => array("admin.js")
 		);
 		$viewData = array(
-			"viewName" => "folder_dashboard",
+			"viewName" => "mainFolder",
             "viewData" => array("allFolderData"=>$allFolderData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
