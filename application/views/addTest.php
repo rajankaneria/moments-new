@@ -10,9 +10,12 @@
         </div>
       <!-- </div>
      <div class="row"> -->
-          <div class="input-field col s12 m6">
+          <div class="input-field col s12 m6" style="display: none;" id="addTestimonial-image">
             <input  name="image" id="image" type="file" class="validate"> 
             <label for="name" style="margin-top: -42px !important;">Image</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <a href="#" onclick="('#addTestimonial-image input').click()" class="btn blue">Upload File</a>
           </div>
       </div> 
 
