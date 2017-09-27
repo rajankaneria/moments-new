@@ -134,7 +134,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
 	public function addImage(){
@@ -229,7 +229,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
 	public function addClient(){
@@ -322,14 +322,13 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_templete',$viewData);
 	}
 
-	    
-	    public function testimonials()
-		{	
-		$this->load->model("admin_model");	
-		$testData=$this->admin_model->testDetails();
+	public function testimonials()
+	{	
+		$this->load->model("Admin_model");	
+		$testData=$this->Admin_model->testDetails();
 		$headerData = array(
 			"pageTitle" => "Testimonials",
 			"stylesheet" => array("admin.css","header.css")
@@ -343,7 +342,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin-templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 	public function addTest(){
 		$this->load->model("admin_model");
