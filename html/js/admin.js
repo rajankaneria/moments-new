@@ -163,12 +163,13 @@ $(function(){
 	/*start folder*/
 	$("#addFolderBtn").on("click",function(){
 		$("#addFolderModal").modal('open');
+		$('select').material_select();
 	});
 
 	$("#addFolder").on("click",function(){
 		var data={
-			"type_id":$("#type_id").val(),
-			"name":$("#name").val()
+			"type_id":$("#addFolderModal #type_id").val(),
+			"name":$("#addFolderModal #name").val()
 		};
 		$.post(baseURL+"admin/addFolder/",{data:data},function(data){
 			//var data=$.parseJSON(data);
@@ -178,17 +179,17 @@ $(function(){
 	});
 
 	$("#updateFolder").on("click",function(){
-	var data={
-		"id":$("#editFolderModal #id").val(),
-		"type_id":$("#editFolderModal #type_id").val(),
-		"name":$("#editFolderModal #name").val()
-	};
-	$.post(baseURL+"admin/updateFolder/",{data:data},function(data){
-		//var data=$.parseJSON(data);
-		//window.location.reload();
-	});
+		var data={
+			"id":$("#editFolderModal #id").val(),
+			"type_id":$("#editFolderModal #type_id").val(),
+			"name":$("#editFolderModal #name").val()
+		};
+		$.post(baseURL+"admin/updateFolder/",{data:data},function(data){
+			//var data=$.parseJSON(data);
+			window.location.reload();
+		});
 
-});
+	});
 
 	$(".folder-delete-btn").on("click",function(){
 		var folderID=$(this).data('folder-id');
@@ -204,6 +205,7 @@ $(function(){
 		$.post(baseURL+"admin/editFolder/"+folderID,function(data){
 			$("#editFolderModal .modal-content").html(data);
 			Materialize.updateTextFields();
+			$('select').material_select();
 		});
 	});
 

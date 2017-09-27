@@ -23,7 +23,7 @@ class Admin extends CI_Controller
 		$this->load->view('admin_template',$viewData);
 	}
 	
-	public function folderType(){
+	public function gallery_type(){
 		$this->load->model('admin_model');
 		$allTypeData=$this->admin_model->allTypeData();		
 
@@ -71,9 +71,13 @@ class Admin extends CI_Controller
 /*=================================Folder==================================================*/
 
 
-	public function folderDashboard(){
+	public function gallery_folder(){
 
 		$this->load->model("admin_model");
+		$this->load->model("gallery_model");
+
+		$galleryType = $this->gallery_model->getFolderType();
+
 		$allFolderData=$this->admin_model->allFolderData();		
 
 		$headerData = array(
@@ -84,8 +88,8 @@ class Admin extends CI_Controller
 			"jsFiles" => array("admin.js")
 		);
 		$viewData = array(
-			"viewName" => "mainFolder",
-            "viewData" => array("allFolderData"=>$allFolderData),
+			"viewName" => "folder_dashboard",
+            "viewData" => array("allFolderData"=>$allFolderData,"gallery_type"=>$galleryType),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
@@ -109,9 +113,14 @@ class Admin extends CI_Controller
 		$this->load->model("admin_model");
 		$this->admin_model->deleteFolder($deleteId);
 	}
-	public function editFolder($editId){		
+	public function editFolder($editId){	
+		$this->load->model("gallery_model");	
 		$this->load->model("admin_model");
+
+		$galleryType = $this->gallery_model->getFolderType();
+
 		$output=$this->admin_model->editFolder($editId);
+		$output["type"] = $galleryType;
 		$this->load->view("updateFolder",$output);
 	}
 
