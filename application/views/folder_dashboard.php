@@ -41,7 +41,7 @@
 <!-- Modal Structure -->
   <div id="addFolderModal" class="modal">
     <div class="modal-content">
-      <?php $this->load->view("addFolder"); ?>
+      <?php $this->load->view("addFolder",array("type"=>$gallery_type)); ?>
     </div>
     <div class="modal-footer">
       <a id="addFolder" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
