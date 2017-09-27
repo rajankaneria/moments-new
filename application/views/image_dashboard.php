@@ -1,9 +1,9 @@
 <div class="container">
  <div class="row">
  <div class="card-panel">
-  <div class="page-header">
-      <div class="page-title">Image Management</div>      
-      <div class="page-button"><a class="waves-effect waves-light btn blue" id="addImageBtn">Add</a></div>
+  <div class="page-header row">
+      <div class="page-title col s8 m10">Image Management</div>      
+      <div class="page-button col s4 m2"><a class="waves-effect waves-light btn blue" id="addImageBtn">Add</a></div>
   </div>
    <div class="page-content">
    	<table border="1" class="responsive-table centered">
