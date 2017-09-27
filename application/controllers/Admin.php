@@ -155,7 +155,8 @@ class Admin extends CI_Controller
 	public function addImage(){
 
 		$result=array(
-			"folder_id"=>$_POST['folder_id']
+			"type_id"=>$_POST['type_id'],
+			"folder_id"=>$_POST['sub_type']
 		);
 
 		$this->load->model("admin_model");	
@@ -221,7 +222,17 @@ class Admin extends CI_Controller
 		public function editImage($editId){		
 			$this->load->model("admin_model");
 			$output=$this->admin_model->editImage($editId);
-			$this->load->view("updateImage",$output);
+			$this->load->model("gallery_model");
+			$galleryType = $this->gallery_model->getFolderType();
+			$folderList = array();
+			foreach($galleryType as $key=>$typeRow){
+				$typeID = $typeRow["id"];
+				$folderList["type_".$typeID] = $this->gallery_model->getFolders($typeID);
+			}
+			$output["galleryType"]=$galleryType;
+			$output["folderList"]=$folderList;
+
+		$this->load->view("updateImage",$output);
 		}	
 
 

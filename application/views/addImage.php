@@ -38,7 +38,7 @@
   </div>
   <div class="row">
     <div class="input-field col s12">
-      <a href="#" onclick="('#addImage-input input').click()" class="btn bule">Upload File</a>
+      <a href="#" onclick="$('#addImage-input input').click()" class="btn bule">Upload File</a>
     </div>
   </div>
 

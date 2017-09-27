@@ -12,21 +12,23 @@
     <thead>
    		<tr>
         <th>Order</th>         
-        <th>Folder Name</th>  
-        <th>Name</th>              
+        <th>Type</th>  
+        <th>Folder</th>  
+        <th>Image</th>            
         <th>Actions</th>
    		</tr>
     </thead>
     <tbody>
       <?php foreach ($allImageData as $key => $imageRow) { ?>
-      <tr id="folder-id<?php echo $imageRow['id']; ?>">  
+      <tr id="image-id<?php echo $imageRow['id']; ?>">  
         <td><?php echo $imageRow['id']; ?></td> 
-        <td><?php echo $imageRow['type_id']; ?></td>          
-        <td><?php echo $imageRow['name']; ?></td>           
+        <td><?php echo $imageRow['type_id']; ?></td>   
+        <td><?php echo $imageRow['folder_id']; ?></td>    
+       <td> <img src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image']; ?>"></td>
            
         <td class="right-align blog-btn">
-        <a data-folder-id="<?php echo $imageRow['id']; ?>" class="btn-floating waves-effect waves-light red folder-delete-btn"><i class="material-icons">delete</i></a>
-        <a data-folder-id="<?php echo $imageRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey folder-edit-btn"><i class="material-icons">mode_edit</i></a>
+        <a data-image-id="<?php echo $imageRow['id']; ?>" class="btn-floating waves-effect waves-light red img-delete-btn"><i class="material-icons">delete</i></a>
+        <a data-image-id="<?php echo $imageRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey img-edit-btn"><i class="material-icons">mode_edit</i></a>
         </td>
       </tr>
       <?php } ?>

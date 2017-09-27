@@ -71,7 +71,7 @@ $(function(){
 		var formData=new FormData($("#addImageForm")[0]);
 		$.ajax({
 				url:baseURL+"admin/addImage/",
-				data:formdata,
+				data:formData,
 				type:"POST",
 				processData:false,
 				contentType:false,
@@ -100,9 +100,11 @@ $(function(){
 
 	$(".img-delete-btn").on("click",function(){
 		var imageID=$(this).data('image-id');
+		if(confirm("Do you want to delete this records..???")){
 		$.post(baseURL+"admin/deleteImage/"+imageID,function(data){
 			$("#image-id"+imageID).remove();
 		});
+	}
 	});
 
 	$(".img-edit-btn").on("click",function(){
@@ -112,8 +114,17 @@ $(function(){
 		$.post(baseURL+"admin/editImage/"+imageID,function(data){
 			$("#editImageModal .modal-content").html(data);
 			Materialize.updateTextFields();
+			$('select').material_select();
 		});
 	});
+
+$("#updateImageForm #type_id").on("change",function(){
+	var typeID = $(this).val();
+	$("#updateImageForm  #sub_type").removeAttr("disabled");
+	var dropdownList = $("#type_"+typeID).html();
+	$("#updateImageForm  #sub_type").html(dropdownList);
+	$('#updateImageForm  #sub_type').material_select();
+});
 
 	/*folder image  end*/
 	/*=======================================================*/
@@ -306,7 +317,7 @@ $(function(){
 
 		if(data.status=="ok"){
 			alert("Login successfully...")
-			window.location.href=baseURL+"Admin/gallery_type";
+			window.location.href=baseURL+"Admin/gallery_type/";
 		}
 		else if(data.status=="fail"){
 			alert("Login Fail...");
