@@ -127,7 +127,15 @@ class Admin extends CI_Controller
 	/*=========================================Image=======================================*/
 	public function gallery_images(){
 		$this->load->model("admin_model");
-		$allImageData=$this->admin_model->allImageData();		
+		$allImageData=$this->admin_model->allImageData();	
+
+		$this->load->model("gallery_model");
+		$galleryType = $this->gallery_model->getFolderType();
+		$folderList = array();
+		foreach($galleryType as $key=>$typeRow){
+			$typeID = $typeRow["id"];
+			$folderList["type_".$typeID] = $this->gallery_model->getFolders($typeID);
+		}
 
 		$headerData = array(
 			"pageTitle" => "Image",
@@ -139,7 +147,7 @@ class Admin extends CI_Controller
 
 		$viewData = array(
 			"viewName" => "image_dashboard",
-            "viewData" => array("allImageData"=>$allImageData),
+            "viewData" => array("allImageData"=>$allImageData,"galleryType"=>$galleryType,"folderList"=>$folderList),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);

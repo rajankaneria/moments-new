@@ -18,6 +18,7 @@ $(function(){
 				contentType:false,
 				success:function(result){
 					alert("Added data Successfully....");
+					window.location.reload();
 				}
 		});
 
@@ -33,6 +34,7 @@ $(function(){
 				contentType:false,
 				success:function(result){
 					alert("Update data Successfully....");
+					window.location.reload();
 				}
 		});
 
@@ -60,6 +62,7 @@ $(function(){
 	/*folder image start*/
 	$("#addImageBtn").on("click",function(){
 		$("#addImageModal").modal('open');
+		$('select').material_select();
 	});
 
 	$("#addImage").on("click",function(){
@@ -72,6 +75,7 @@ $(function(){
 				contentType:false,
 				success:function(result){
 					alert("Added data Successfully....");
+					window.location.reload();
 				}
 		});
 	});
@@ -86,6 +90,7 @@ $(function(){
 				contentType:false,
 				success:function(result){
 					alert("Update data Successfully....");
+					window.location.reload();
 				}
 		});
 
@@ -121,8 +126,16 @@ $(function(){
 			"name":$("#addTypeForm #name").val()
 		};
 		$.post(baseURL+"admin/addType/",{data:data},function(data){
-			//var data=$.parseJSON(data);
-			window.location.reload();
+			var data=$.parseJSON(data);
+			if(data.status=="ok"){
+				alert("Your Main Folder added successfully...");
+				window.location.reload();
+			}
+			else if(data.status=="fail"){
+				alert("Your Main Folder added Fail...");
+				window.location.reload();
+			}
+			
 		});
 
 	});
@@ -193,9 +206,11 @@ $(function(){
 
 	$(".folder-delete-btn").on("click",function(){
 		var folderID=$(this).data('folder-id');
+		if(confirm("Do you want to delete this record..???")){
 		$.post(baseURL+"admin/deleteFolder/"+folderID,function(data){
 			$("#folder-id"+folderID).remove();
 		});
+	}
 	});
 
 	$(".folder-edit-btn").on("click",function(){
@@ -227,8 +242,8 @@ $(function(){
 			processData:false,
 			contentType:false,
 			success:function(result){
-				//alert("Added Testimonial successfully.....");
-				//window.location.reload();
+				alert("Added Testimonial successfully.....");
+				window.location.reload();
 			}
 		});
 	});
@@ -284,4 +299,15 @@ $(function(){
 	  );
 
 
+});
+
+
+
+
+$("#addImageForm #type_id").on("change",function(){
+	var typeID = $(this).val();
+	$("#sub_type").removeAttr("disabled");
+	var dropdownList = $("#type_"+typeID).html();
+	$("#sub_type").html(dropdownList);
+	$('#sub_type').material_select();
 });
