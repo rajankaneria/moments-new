@@ -128,8 +128,8 @@ $(function(){
 
 	$("#updateType").on("click",function(){
 		var data={
-			"id":$("#id").val(),
-			"name":$("#name").val()
+			"id":$("#editTypeModal #id").val(),
+			"name":$("#editTypeModal #name").val()
 		};
 		$.post(baseURL+"admin/updateType/",{data:data},function(data){
 			$.parseJSON(data);

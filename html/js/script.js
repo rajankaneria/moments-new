@@ -26,8 +26,3 @@ function adjustImageSize(imageSelector,containerSelector){
 		}
 	});
 }
-$(function(){
-	setInterval(function(){
-	    adjustImageSize("img.materialboxed",".image-item");
-	},10);
-});
