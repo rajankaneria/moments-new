@@ -8,15 +8,15 @@
 				<div class="row">
 					<form>
 						<div class="input-field col s12">
-				          <input id="last_name" type="text" class="validate" required="required">
-				          <label for="last_name">Email or Username</label>
+				          <input id="email" name="email" type="text" class="validate" required="required">
+				          <label for="email">Email or Username</label>
 				        </div>
 				        <div class="input-field col s12">
-				          <input id="last_name" type="password" class="validate" required="required">
-				          <label for="last_name">Password</label>
+				          <input id="password" name="password" type="password" class="validate" required="required">
+				          <label for="password">Password</label>
 				        </div>
 				        <div class="input-field col s12">
-				          <input id="last_name" type="submit" class="btn admin-login-btn" value="login">
+				          <input id="login" type="button" class="btn admin-login-btn" value="login">
 				        </div>
 				    </form>
 				</div>

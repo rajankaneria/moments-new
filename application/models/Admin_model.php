@@ -6,7 +6,16 @@ class Admin_model extends CI_Model
 {
 	/*=========================Type=========================================================*/
 	public function addType($typeData){
-		$this->db->insert("type",$typeData);
+		$query=$this->db->insert("type",$typeData);
+		if($query){
+			$check=array("status"=>"ok","message"=>"You type added successfully..");
+			
+		}
+		else{
+				$check=array("status"=>"ok","message"=>"You type added Fail..");
+				
+			}
+			return $check;
 	}
 	public function updateType($typeData,$typeId){
 		$this->db->where("id",$typeId);
@@ -129,6 +138,19 @@ class Admin_model extends CI_Model
 	}
 
   /*=====================================================================================*/
+
+  /*=====================Login=======================================================*/
+  public function login($data){
+  	$email=$data['email'];
+  	$password=md5($data['password']);
+  	$query=$this->db->query("select * from admin_login where email='$email' and password='$password' ");
+  	if($query->num_rows()==1){
+  		$check=array("status"=>"ok","message"=>"Login Successfully..");
+  		$this->session->set_userdata("email",$data['email']);
+
+  	}
+  }
+  /*==================================================================================*/
 
 }
 
