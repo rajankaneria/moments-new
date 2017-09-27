@@ -9,22 +9,23 @@
    	<table border="1" class="responsive-table centered">
     <thead>
    		<tr>
-        <th>Order</th>         
-        <th>Folder Name</th>  
-        <th>Name</th>              
+        <th>Order</th> 
+        <th>Name</th>          
+        <th>Image</th>  
+                  
         <th>Actions</th>
    		</tr>
     </thead>
     <tbody>
       <?php foreach ($allClientData as $key => $clientRow) { ?>
-      <tr id="folder-id<?php echo $clientRow['id']; ?>">  
-        <td><?php echo $clientRow['id']; ?></td> 
-        <td><?php echo $clientRow['type_id']; ?></td>          
-        <td><?php echo $clientRow['name']; ?></td>           
+      <tr id="client-id<?php echo $clientRow['id']; ?>">  
+        <td><?php echo $clientRow['id']; ?></td>                  
+        <td><?php echo $clientRow['name']; ?></td>   
+        <td><img src="<?php echo base_url(); ?>html/images/client/<?php echo $clientRow['image']; ?>"></td>          
            
         <td class="right-align blog-btn">
-        <a data-folder-id="<?php echo $clientRow['id']; ?>" class="btn-floating waves-effect waves-light red folder-delete-btn"><i class="material-icons">delete</i></a>
-        <a data-folder-id="<?php echo $clientRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey folder-edit-btn"><i class="material-icons">mode_edit</i></a>
+        <a data-client-id="<?php echo $clientRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-btn"><i class="material-icons">delete</i></a>
+        <a data-client-id="<?php echo $clientRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey edit-btn"><i class="material-icons">mode_edit</i></a>
         </td>
       </tr>
       <?php } ?>

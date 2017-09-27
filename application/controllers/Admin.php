@@ -274,7 +274,7 @@ class Admin extends CI_Controller
 
 		$image = $clientID."_clientImage.".pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);		
 		$result=array(					
-					"folder_id"=>$_POST['folder_id']									
+					"name"=>$_POST['name']									
 			);
 			if($_FILES['image']['name']!=""){			
 				$result["image"] = $image;
@@ -336,7 +336,7 @@ class Admin extends CI_Controller
 		$testImage=$testID."_testImage.".pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
 		$updateData=array("image"=>$testImage);
 
-		$this->testimonial_model->updateTest($updateData,$testID);
+		$this->admin_model->updateTest($updateData,$testID);
 		$config['file_name']=$testID."_testImage";
 		$config['upload_path']='C:\wamp\www\moments-new\html\images\testimonials';
 		$config['allowed_types']='gif|png|jpg';

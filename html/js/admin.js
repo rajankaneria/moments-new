@@ -12,7 +12,7 @@ $(function(){
 		var formData=new FormData($("#addClientForm")[0]);
 		$.ajax({
 				url:baseURL+"admin/addClient/",
-				data:formdata,
+				data:formData,
 				type:"POST",
 				processData:false,
 				contentType:false,
@@ -26,8 +26,8 @@ $(function(){
 	$("#updateClient").on("click",function(){
 		var formData=new FormData($("#updateClientForm")[0]);
 		$.ajax({
-				url:baseURL+"admin/aupdateClient/",
-				data:formdata,
+				url:baseURL+"admin/updateClient/",
+				data:formData,
 				type:"POST",
 				processData:false,
 				contentType:false,
@@ -219,7 +219,7 @@ $(function(){
 	$("#sendTestData").on("click",function(){
 		var formData=new FormData($("#addTestForm")[0]);
 		$.ajax({
-			url:baseURL+"Testimonials/addTest/",
+			url:baseURL+"Admin/addTest/",
 			data:formData,
 			type:"POST",
 			processData:false,
@@ -234,7 +234,7 @@ $(function(){
 	$("#updateTest").on("click",function(){
 		var formData=new FormData($("#updateTestForm")[0]);
 		$.ajax({
-			url:baseURL+"Testimonials/updateTest/",
+			url:baseURL+"Admin/updateTest/",
 			data:formData,
 			type:"POST",
 			processData:false,
@@ -251,7 +251,7 @@ $(function(){
 		$("#editTestModal .modal-content").html("");
 		$("#editTestModal").modal('open');
 		var editTest=$(this).data('test-id');
-		$.post(baseURL+"Testimonials/editTest/"+editTest,function(data){
+		$.post(baseURL+"Admin/editTest/"+editTest,function(data){
 			$("#editTestModal .modal-content").html(data);
 			Materialize.updateTextFields();
 		});	
@@ -261,7 +261,7 @@ $(function(){
 	$(".test-delete-btn").on("click",function(){
 	var dltTest=$(this).data('test-id');
 	if(confirm("Do you want to delete this Record....")){
-		$.post(baseURL+"Testimonials/deleteTest/"+dltTest,function(data){
+		$.post(baseURL+"Admin/deleteTest/"+dltTest,function(data){
 			$("#testid"+dltTest).remove();
 		});		
 	}
