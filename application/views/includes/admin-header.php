@@ -41,23 +41,11 @@
               <a href="<?php echo base_url(); ?>admin" class="brand-logo"><img src="<?php echo base_url(); ?>html/images/event_logo.png" height="100px" id="logo"></a>
           </div>
       </li>  
-      <li><a href="<?php echo base_url(); ?>admin/folderType">Folder Type</a></li>
-      <li><a href="<?php echo base_url(); ?>admin/mainFolder">Main Folder</a></li>
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="#!">First</a></li>
-                <li><a href="#!">Second</a></li>
-                <li><a href="#!">Third</a></li>
-                <li><a href="#!">Fourth</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
+      <li><a href="<?php echo base_url(); ?>admin/gallery_type">Gallery Type</a></li>
+      <li><a href="<?php echo base_url(); ?>admin/gallery_folder">Gallery Folder</a></li>
+      <li><a href="<?php echo base_url(); ?>admin/gallery_images">Gallery Images</a></li>
+      <li><a href="<?php echo base_url(); ?>admin/clients">Clients</a></li>
+      <li><a href="<?php echo base_url(); ?>admin/testimonials">Testimonials</a></li>
     </ul>
    <nav class="admin-header-area">
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>

@@ -125,7 +125,7 @@ class Admin extends CI_Controller
 	}
 
 	/*=========================================Image=======================================*/
-	public function imageDashboard(){
+	public function gallery_images(){
 		$this->load->model("admin_model");
 		$allImageData=$this->admin_model->allImageData();		
 
@@ -143,7 +143,7 @@ class Admin extends CI_Controller
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
-		$this->load->view('admin_templete',$viewData);
+		$this->load->view('admin_template',$viewData);
 	}
 
 	public function addImage(){
@@ -221,7 +221,7 @@ class Admin extends CI_Controller
 
 
 	/*==================================Client Logo=======================================*/
-	public function clientDashboard(){
+	public function clients(){
 		$this->load->model("admin_model");
 		$allClientData=$this->admin_model->allClientData();		
 
