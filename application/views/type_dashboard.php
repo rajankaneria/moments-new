@@ -24,8 +24,8 @@
         <td><?php echo $typeRow['name']; ?></td>           
            
         <td class="right-align blog-btn">
-        <a data-type-id="<?php echo $typeRow['id']; ?>" class="btn-floating waves-effect waves-light red blog-delete-btn"><i class="material-icons">delete</i></a>
-        <a data-type-id="<?php echo $typeRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey blog-edit-btn"><i class="material-icons">mode_edit</i></a>
+        <a data-type-id="<?php echo $typeRow['id']; ?>" class="btn-floating waves-effect waves-light red type-delete-btn"><i class="material-icons">delete</i></a>
+        <a data-type-id="<?php echo $typeRow['id']; ?>" class="btn-floating waves-effect waves-light blue-grey type-edit-btn"><i class="material-icons">mode_edit</i></a>
         </td>
       </tr>
       <?php } ?>

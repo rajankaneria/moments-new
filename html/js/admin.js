@@ -1,9 +1,10 @@
 var baseURL;
 $(function(){
+	$('.modal').modal();
 	baseURL=$("#base_url").val();
 
 	/*start client logo*/
-	$(#addClientBtn).on("click",function(){
+	$('#addClientBtn').on("click",function(){
 		$("#addClientModal").modal('open');
 	});
 
@@ -127,10 +128,9 @@ $(function(){
 
 	$("#updateType").on("click",function(){
 		var data={
-			"id":$("#id").val(),
 			"name":$("#name").val()
 		};
-		$.post(baseURL+"admin/addType/",{data:data},function(data){
+		$.post(baseURL+"admin/updateType/",{data:data},function(data){
 			var data=$.parseJSON(data);
 		});
 
@@ -139,9 +139,11 @@ $(function(){
 
 	$(".type-delete-btn").on("click",function(){
 		var typeID=$(this).data('type-id');
+		if(confirm("Do you want delete this records..??")){
 		$.post(baseURL+"admin/deleteType/"+typeID,function(data){
 			$("#type-id"+typeID).remove();
 		});
+		}
 	});
 
 	$(".type-edit-btn").on("click",function(){

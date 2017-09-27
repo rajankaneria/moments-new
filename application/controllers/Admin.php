@@ -33,20 +33,16 @@ class Admin extends CI_Controller
 	}
 	public function updateType(){
 		$data=$_POST['data'];
-		$id=$data['id'];
+		$id=$_POST['typeId'];
 		$this->load->model("admin_model");
 		$this->admin_model->updateType($data,$id);
 		
 	}
-	public function deleteType(){
-		$data=$_POST['data'];
-		$id=$data['id'];
+	public function deleteType($id){	
 		$this->load->model("admin_model");
 		$this->admin_model->deleteType($id);
 	}
-	public function editType(){
-		$data=$_POST['data'];
-		$id=$data['id'];
+	public function editType($id){
 		$this->load->model("admin_model");
 		$output=$this->admin_model->editType($id);
 		$this->load->view("updateType",$output);
@@ -55,7 +51,7 @@ class Admin extends CI_Controller
 
 /*=================================Folder==================================================*/
 
-	public function folderDashboard(){
+	/*public function folderDashboard(){
 		$this->load->model("admin_model");
 		$allFolderData=$this->admin_model->allFolderData();		
 
@@ -97,9 +93,9 @@ class Admin extends CI_Controller
 		$output=$this->admin_model->editFolder($editId);
 		$this->load->view("updateFolder",$output);
 	}
-
+*/
 	/*=========================================Image=======================================*/
-	public function imageDashboard(){
+	/*public function imageDashboard(){
 		$this->load->model("admin_model");
 		$allImageData=$this->admin_model->allImageData();		
 
@@ -191,11 +187,11 @@ class Admin extends CI_Controller
 			$this->load->model("admin_model");
 			$output=$this->admin_model->editImage($editId);
 			$this->load->view("updateImage",$output);
-		}	
+		}	*/
 
 
 	/*==================================Client Logo=======================================*/
-	public function clientDashboard(){
+	/*public function clientDashboard(){
 		$this->load->model("admin_model");
 		$allClientData=$this->admin_model->allClientData();		
 
@@ -286,9 +282,9 @@ class Admin extends CI_Controller
 			$this->load->model("admin_model");
 			$output=$this->admin_model->editClient($editId);
 			$this->load->view("updateClient",$output);
-		}	
+		}	*/
 		/*=================Testimonials============================================*/
-		public function testimonialDashboard(){
+		/*public function testimonialDashboard(){
 		$this->load->model("admin_model");
 		$allTestData=$this->admin_model->allTestData();		
 
@@ -386,6 +382,6 @@ class Admin extends CI_Controller
 			$data=$this->admin_model->editTest($testID);
 			$this->load->view('updateTest',$data);
 		}
-
+*/
 }
 ?>

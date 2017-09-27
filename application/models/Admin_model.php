@@ -17,15 +17,17 @@ class Admin_model extends CI_Model
 		$this->db->delete("type");
 	}
 	public function editType($typeId){
-		$result=$this->db->query("select * from type where id='$typeId' ");
-		return $result;
+		$query=$this->db->query("select * from type where id='$typeId' ");
+		$output=$query->row_array();
+		return $output;
 	}
 	public function allTypeData(){
-		$result=$this->db->query("select * from type");
-		return $result;
+		$query=$this->db->query("select * from type");
+		$output=$query->result_array();
+		return $output;
 	}
-	/*=============================Folder===================================================*/
-	public function addFolder($folderData){
+	/*============================Folder===================================================*/
+/*	public function addFolder($folderData){
 		$this->db->insert("folder",$folderData);
 	}
 	public function updateFolder($folderData,$folderId){
@@ -37,17 +39,19 @@ class Admin_model extends CI_Model
 		$this->db->delete("folder");
 	}
 	public function editFolder($folderId){
-		$result=$this->db->query("select * from folder where id='$folderId' ");
-		return $result;
+		$query=$this->db->query("select * from folder where id='$folderId' ");
+		$output=$query->row_array();
+		return $output;
 	}
 	public function allFolderData(){
-		$result=$this->db->query("select * from folder");
-		return $result;
-	}
+		$query=$this->db->query("select * from folder");
+		$output=$query->result_array();
+		return $output;
+	}*/
 
 	/*=============================Image===================================================*/
 
-	public function addImage($imageData){
+	/*public function addImage($imageData){
 		$this->db->insert("image",$imageData);
 		$id=$this->db->insert_id();
 		return $id;
@@ -61,18 +65,20 @@ class Admin_model extends CI_Model
 		$this->db->delete("image");
 	}
 	public function editImage($imageId){
-		$result=$this->db->query("select * from image where id='$imageId' ");
-		return $result;
+		$query=$this->db->query("select * from image where id='$imageId' ");
+		$output=$query->row_array();
+		return $output;
 	}
 	public function allImageData(){
-		$result=$this->db->query("select * from image");
-		return $result;
-	}
+		$query=$this->db->query("select * from image");
+		$output=$query->result_array();
+		return $output;
+	}*/
 
 
 	/*=============================Client Logo=============================================*/
 
-	public function addClient($clientData){
+	/*public function addClient($clientData){
 		$this->db->insert("client_logo",$clientData);
 		$id=$this->db->insert_id();
 		return $id;
@@ -86,17 +92,19 @@ class Admin_model extends CI_Model
 		$this->db->delete("client_logo");
 	}
 	public function editClient($clientId){
-		$result=$this->db->query("select * from client_logo where id='$clientId' ");
-		return $result;
+		$query=$this->db->query("select * from client_logo where id='$clientId' ");
+		$output=$query->row_array();
+		return $output;
 	}
 	public function allClientData(){
-		$result=$this->db->query("select * from client_logo");
-		return $result;
+		$query=$this->db->query("select * from client_logo");
+		$output=$query->result_array();
+		return $output;
 	}
-
+*/
 	/*=============================Testimonials============================================*/
 
-	public function addTest($testData){
+	/*public function addTest($testData){
 		$this->db->insert("testimonials",$testData);
 		$id=$this->db->insert_id();
 		return $id;
@@ -110,13 +118,15 @@ class Admin_model extends CI_Model
 		$this->db->delete("testimonials");
 	}
 	public function editTest($testId){
-		$result=$this->db->query("select * from testimonials where id='$testId' ");
-		return $result;
+		$query=$this->db->query("select * from testimonials where id='$testId' ");
+		$output=$query->row_array();
+		return $output;
 	}
 	public function allTestData(){
-		$result=$this->db->query("select * from testimonials");
-		return $result;
-	}
+		$query=$this->db->query("select * from testimonials");
+		$output=$query->result_array();
+		return $output;
+	}*/
 
   /*=====================================================================================*/
 
