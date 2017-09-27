@@ -84,7 +84,7 @@ class Admin extends CI_Controller
 			"jsFiles" => array("admin.js")
 		);
 		$viewData = array(
-			"viewName" => "mainFolder",
+			"viewName" => "folder_dashboard",
             "viewData" => array("allFolderData"=>$allFolderData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
