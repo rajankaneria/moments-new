@@ -296,17 +296,19 @@ $(function(){
 
 
 	/*=============Login=============*/
-	$("#login").on("click",function(){
+	$(".admin-login-btn").on("click",function(){
 		var data={
 			"email":$("#email").val(),
 			"password":$("#password").val()
 		};
-		$.post(baseURL+"Admin/doLogin/",{data:data},function(data){
-			var data=$.parseJSON(data);
+		$.post(baseURL+"Admin/doLogin/",{data:data},function(data){			
+		var data=$.parseJSON(data);
+
 		if(data.status=="ok"){
+			alert("Login successfully...")
 			window.location.href=baseURL+"Admin/gallery_type";
 		}
-		else if(data.status="fail"){
+		else if(data.status=="fail"){
 			alert("Login Fail...");
 			window.location.href="#!";
 		}
