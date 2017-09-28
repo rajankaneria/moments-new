@@ -8,18 +8,20 @@
  				<div class="test-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
  				<div class="test-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
  			</div>
+ 			<?php foreach($allTestData as $key => $allTestRow){ ?>
 		    <div class="carousel-item white-text" href="#one!">
 		      <div class="test-img">
-		      	<img src="<?php echo base_url(); ?>html/images/hirav_shah.jpg">
+		      	<img src="<?php echo base_url(); ?>html/images/testimonials/<?php echo $allTestRow['image']; ?>">
 		      </div>
 		      <div class="test-name">
-		      		<p>Hirav Shah</p>
+		      		<p><?php echo $allTestRow['title']; ?></p>
 		      </div>
 		      <div class="test-desc"><p class="white-text">
-		      	We hope you have enjoyed using Materialize! If you feel Materialize has helped you out and want to support the team, send us over a donation! Any amount would help support and continue development on this project and is greatly appreciated.
+		      	<?php echo $allTestRow['details']; ?>
 		      </p></div>
 		    </div>
-		    <div class="carousel-item white-text" href="#two!">
+		    <?php } ?>
+		    <!-- <div class="carousel-item white-text" href="#two!">
 		      <h2>Second Panel</h2>
 		      <p class="white-text">This is your second panel</p>
 		    </div>
@@ -30,7 +32,7 @@
 		    <div class="carousel-item white-text" href="#four!">
 		      <h2>Fourth Panel</h2>
 		      <p class="white-text">This is your fourth panel</p>
-		    </div>
+		    </div> -->
 		</div>
  	</div>
  </div>
