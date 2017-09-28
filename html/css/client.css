@@ -1,0 +1,194 @@
+/* css for gallery */
+/* team css */
+.main-content .title {
+    color: rgb(238,49,69);
+    font-size: 35px;
+    /* font-weight: bold; */
+}
+
+.main-content .sub-title {
+    color: rgb(238,49,69);
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.main-content p {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.main-footer {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: rgba(238,49,69,0.85);
+    bottom: 0;
+}
+
+.navigation {
+    border-bottom: 3px solid #cf293f;
+}
+
+.sub-content-title {
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.sub-content-description p {
+    font-size: 14px;
+}
+
+.main-image-overlay{
+    background: rgba(0,0,0,0.7);
+}
+
+
+.row.client-container {
+    margin-top: 100px;
+}
+
+.client-image-container {
+}
+
+.client-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.client-image-container img {
+    width: 100%;
+}
+
+/* css for gallery */
+/* team css */
+.main-content .title {
+    color: rgb(238,49,69);
+    font-size: 35px;
+    /* font-weight: bold; */
+}
+
+.main-content .sub-title {
+    color: rgb(238,49,69);
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.main-content p {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.main-footer {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: rgba(238,49,69,0.85);
+    bottom: 0;
+}
+
+.navigation {
+    border-bottom: 3px solid #cf293f;
+}
+
+.sub-content-title {
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.sub-content-description p {
+    font-size: 14px;
+}
+
+.main-image-overlay{
+    background: rgba(0,0,0,0.7);
+}
+
+
+.row.client-container {
+    margin-top: 100px;
+    width: 70%;
+}
+
+.client-image-container {
+}
+
+.client-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    padding: 40px;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.client-image-container img {
+    width: 100%;
+}
+body{
+    overflow: auto !important;
+}
+
+.main-image img{
+    position: fixed;
+    z-index: -1;
+}
+.main-image{
+    position: fixed;
+    z-index: 0;
+}
+
+
+
+
+@media(max-width: 768px){
+    body{
+        overflow: auto;
+    }
+    
+    .slide-btn {
+        position: fixed;
+        padding: 25px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: #000;
+    }
+    .site-logo{
+        text-align: center;
+        float: none;
+    }
+    .main-image{
+        position: relative;
+    }
+    .main-content {
+        background: rgba(255,255,255,0.85);
+        width: 100% ;
+        height: auto;
+        position: relative;
+        padding: 25px;
+        -webkit-clip-path:none;
+        -moz-clip-path:none;
+        -o-clip-path:none;
+        clip-path:none;
+        right: 0px !important;
+        top: 0px;
+    }   
+    .sub-content-title {
+        font-size: 28px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .team-member-bio {
+        float: left;
+        width:100%;
+    }
+    .main-footer{
+        position: fixed !important;
+        bottom: 0 !important;
+    }
+
