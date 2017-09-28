@@ -26,8 +26,8 @@
 <body>
 
 <div class="navigation"> 
-    <div class="site-logo"><img src="<?php echo base_url(); ?>html/images/event_logo.png" /></div>
-    <div class="menu">
+    <div class="site-logo"><a href="<?php echo base_url(); ?>home"><img src="<?php echo base_url(); ?>html/images/event_logo.png" /></a></div>
+    <div class="menu hide-on-med-and-down">
         <div class="menu-item"><a href="<?php echo base_url(); ?>home">Home</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>team">Our Team</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>services">Services</a></div>
@@ -37,3 +37,21 @@
         <div class="menu-item"><a href="#">Contact</a></div>
     </div>
 </div>
+
+<!-- Mobile Responsive Menu -->
+
+<ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="site-logo"><img src="<?php echo base_url(); ?>html/images/event_logo.png" class="responsive-img" /></div>
+    </div></li>
+    <li><div class="divider"></div></li>
+    <li><a href="<?php echo base_url(); ?>home">Home</a></li>
+    <li><a href="<?php echo base_url(); ?>team">Our Team</a></li>
+    <li><a href="<?php echo base_url(); ?>services">Services</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#!">Clients</a></li>
+    <li><a href="#!">Testimonial</a></li>
+    <li><a href="#!">Contact</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse slide-btn"><i class="material-icons">menu</i></a>
+      

@@ -21,4 +21,12 @@ $(function(){
 			});
 		});
 	});
+
+
+	/*mobile Responsive*/
+
+
+
+
+
 });

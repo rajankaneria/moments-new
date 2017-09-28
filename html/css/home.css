@@ -1,4 +1,6 @@
 /* home page css */
+
+
 .main-content .title {
     color: rgb(238,49,69);
     font-size: 35px;
@@ -29,3 +31,47 @@
 	border-bottom: 3px solid #cf293f;
 }
 
+
+
+
+
+/*======== Navigation for mobile =========*/
+
+@media(max-width: 768px){
+    body{
+        overflow: auto;
+    }
+    
+    .slide-btn {
+        position: fixed;
+        padding: 25px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: #000;
+    }
+    .site-logo{
+        text-align: center;
+        float: none;
+    }
+    .main-image{
+        position: relative;
+    }
+    .main-content {
+        background: rgba(255,255,255,0.85);
+        width: 100% ;
+        height: auto;
+        position: relative;
+        padding: 25px;
+        -webkit-clip-path:none;
+        -moz-clip-path:none;
+        -o-clip-path:none;
+        clip-path:none;
+        right: 0px !important;
+    }   
+    .main-footer{
+        position: fixed !important;
+        bottom: 0 !important;
+    }
+
+}
