@@ -164,11 +164,48 @@
 
 
 
+<div class="sub-content mobile-container hide-on-large-only">
+	<div class="sub-content-title">Our Services</div>
+	<div class="sub-content-description row">
+		<div class="service-container active" data-target="weddingServices">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/wedding_service.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/wedding_service_white.png"/></div>
+			<!-- <div class="service-name">WEDDING SERVICES</div> -->
+		</div>
+		<div class="service-container" data-target="sangeet">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/sangeet.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/sangeet_white.png"/></div>
+			<!-- <div class="service-name">SANGEET</div> -->
+		</div>
+		<div class="service-container" data-target="wedding_planner">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/wedding_planner.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/wedding_planner_white.png"/></div>
+			<!-- <div class="service-name">WEDDING PLANNER</div> -->
+		</div>
+		<div class="service-container" data-target="celebrity">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/celebrity.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/celebrity_white.png"/></div>
+			<!-- <div class="service-name">CELEBRITY AND ARTIST MANAGEMENT</div> -->
+		</div>
+		<div class="service-container" data-target="corporate">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/corporate.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/corporate_white.png"/></div>
+			<!-- <div class="service-name">CORPORATE EVENTS</div> -->
+		</div>
+		<div class="service-container" data-target="exhibition">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/exhibition.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/exhibition_white.png"/></div>
+			<!-- <div class="service-name">EXHIBITIONS</div> -->
+		</div>
+		<div class="service-container" data-target="builder">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/builder.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/builder_white.png"/></div>
+			<!-- <div class="service-name">BUILDER SITE LAUNCHING</div> -->
+		</div>
+		<div class="service-container" data-target="religious">
+			<div class="service-photo"><img class="image-red" src="<?php echo base_url(); ?>html/images/service-icons/religious.png"/><img class="image-white" src="<?php echo base_url(); ?>html/images/service-icons/religious_white.png"/></div>
+			<!-- <div class="service-name">RELIGIOUS EVENTS</div> -->
+		</div>
+		
+	</div>
+</div>
 
 
 
-
-<div class="sub-content">
+<div class="sub-content desktop-container hide-on-med-and-down">
 	<div class="sub-content-title">Our Services</div>
 	<div class="sub-content-description row">
 		<div class="service-container active" data-target="weddingServices">
