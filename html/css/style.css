@@ -48,6 +48,7 @@ body{
     background: #fff;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .site-logo {
@@ -137,6 +138,7 @@ body{
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
 
 .gallery-type .image-container {
     cursor: pointer;

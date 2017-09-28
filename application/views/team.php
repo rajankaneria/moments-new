@@ -1,7 +1,7 @@
 
 <div class="main-image"><div class="main-image-overlay"></div><img src="<?php echo base_url(); ?>html/images/team-bg.jpg"/></div>
 
-
+<div class="hide-on-med-and-down">
 <div class="main-content" id="hirav_shah">
 	<div class="title">Hirav <span>Shah</span></div>
 	<div class="row">
@@ -72,6 +72,7 @@
 		</div>
 	</div>
 </div>
+</div>
 <!--
 <div class="sub-content">
 	<div class="sub-content-title">Moments USP's</div>
@@ -84,5 +85,53 @@
 </div>
 
 -->
+
+
+
+<!-- our team on mobile -->
+<div class="hide-on-large-only">
+	<div class="sub-content">
+		<div class="sub-content-title">Our Team</div>
+		<div class="sub-content-description row">
+			<div class="team-member-container active" data-target="hirav_shah" id="hirav_shah">
+				<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/hirav_shah.jpg"/></div>
+				<div class="member-name">HIRAV</div>
+			</div>
+			<div class="team-member-container" data-target="krishna_shah">
+				<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/krishna_shah.jpg"/></div>
+				<div class="member-name">KRISHNA</div>
+			</div>
+			<div class="team-member-container" data-target="vivek_patel">
+				<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/vivek_patel.jpg"/></div>
+				<div class="member-name">VIVEK</div>
+			</div>
+			<div class="team-member-container" data-target="nilesh_patel">
+				<div class="member-photo"><img src="<?php echo base_url(); ?>html/images/nilesh_patel.jpg"/></div>
+				<div class="member-name">NILESH</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="conten-area">
+	<div class="mobile main-content hirav_shah" id="hirav_shah">
+		<div class="title">Hirav <span>Shah</span></div>
+		<div class="row">
+			<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/hirav_shah.jpg"/></div>
+			<div class="team-member-bio">
+				<p>He is the Founder of the company and most trustable name in the industry in the terms of work responsibility, reliability and execution excellence. He looks after all operational stuff, designing of event, branding as well as client communications. Moments is his brain child. Academically he is IT graduate but his desire for creativity and innovation led him to take up the business in the field of event management. </p>
+
+				<p>His vision is to make "Moments" as India's most reliable company in event industry. </p>
+
+				<p>He attended one of the speeches by Shri Narendra Modi during Vibrant Gujarat in 2007 and got inspired as he heard Shri Narendra Modi saying that the service industry is growing rapidly and will remain so for another two decades and young entrepreneurs should come up with great ideas. With this, he and his team thought to getting into the business of service sector.</p>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- over our team on mobile -->
 
 <div class="main-footer"></div>
