@@ -5,8 +5,8 @@
       </div>
       <div class="row">      
         <div class="input-field col s12 m6">
-        <input id="title" name="title" type="text" class="validate" placeholder="Enter your Blog title">
-          <label for="title">Title</label>
+        <input id="title" name="title" type="text" class="validate" placeholder="Enter client name">
+          <label for="title">Client Name</label>
         </div>
       <!-- </div>
      <div class="row"> -->
@@ -15,7 +15,7 @@
             <label for="name" style="margin-top: -42px !important;">Image</label>
           </div>
           <div class="input-field col s12 m6">
-            <a href="#" onclick="('#addTestimonial-image input').click()" class="btn blue">Upload File</a>
+            <a href="#" onclick="$('#addTestimonial-image input').click()" class="btn blue">Upload File</a>
           </div>
       </div> 
 
@@ -23,7 +23,7 @@
         <div class="input-field col s12">
               <textarea  class="validate materialize-textarea"  id="details" name="details">
               </textarea>
-              <label for="details">Details</label>
+              <label for="details">Testimonial</label>
             </div>
         </div> 
     </form>

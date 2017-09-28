@@ -21,7 +21,7 @@
       <tr id="client-id<?php echo $clientRow['id']; ?>">  
         <td><?php echo $clientRow['id']; ?></td>                  
         <td><?php echo $clientRow['name']; ?></td>   
-        <td><img src="<?php echo base_url(); ?>html/images/client/<?php echo $clientRow['image']; ?>"></td>          
+        <td><img src="<?php echo base_url(); ?>html/images/client/<?php echo $clientRow['image']; ?>" style="height:50px; width: auto;"></td>          
            
         <td class="right-align blog-btn">
         <a data-client-id="<?php echo $clientRow['id']; ?>" class="btn-floating waves-effect waves-light red delete-btn"><i class="material-icons">delete</i></a>

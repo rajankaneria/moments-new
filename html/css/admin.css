@@ -301,4 +301,6 @@ div#addTypeModal h5{
   }
 }
 
-
+body{
+overflow: auto !important;
+}

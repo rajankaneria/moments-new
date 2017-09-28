@@ -17,7 +17,7 @@
     </div>
 
     <div class="input-field col s12 m6">
-      <a href="#" onclick="('#addClients-image input').click()" class="btn blue">Upload File</a>
+      <a href="#" onclick="$('#addClients-image input').click()" class="btn blue">Upload File</a>
     </div>
   </div>
 
