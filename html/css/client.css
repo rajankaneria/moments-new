@@ -113,7 +113,7 @@
 }
 
 
-.client-image-container {
+/*.client-image-container {
     position: relative;
     overflow: hidden;
     height: 150px;
@@ -122,9 +122,26 @@
     margin-bottom: 20px;
     border-radius: 5px;
 }
-
+*/
+.client-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    padding: 25px;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}/*
 .client-image-container img {
     width: 100%;
+}*/
+.client-image-container img {
+    width: auto;
+    height: 100px;
+    margin: 0 auto !important;
+    text-align: center;
+    max-width: 100%;
 }
 body{
     overflow: auto !important;

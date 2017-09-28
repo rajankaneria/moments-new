@@ -90,3 +90,4 @@
 			<?php } ?>
 		</div>
 	<?php } ?>
+<div class="main-footer"></div>

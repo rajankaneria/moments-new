@@ -1,6 +1,9 @@
 body{
     overflow: hidden;
 }
+.navigation {
+    border-bottom: 3px solid #cf293f;
+}
 #testimonial{
     height: 450px !important;
 }
