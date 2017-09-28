@@ -450,11 +450,20 @@ class Admin extends CI_Controller
 			$output=$this->admin_model->login($data);
 			echo json_encode($output);
 		}
-
-		  public function logout(){
-		  		$this->session->unset_userdata("email");
-				$this->session->sess_destroy();
-				header('location:'.base_url()."admin");
+		public function logout(){
+	  		$this->session->unset_userdata("email");
+			$this->session->sess_destroy();
+			header('location:'.base_url()."admin");
+		  }
+		  public function contactUs(){
+		  	$data=array(
+		  		"full_name"=>$_POST["full_name"],
+		  		"email"=>$_POST["email"],
+		  		"phone"=>$_POST["phone"],
+		  		"message"=>$_POST["message"]
+		  	);		  	
+		  	$this->load->model("admin_model");
+		  	$this->admin_model->contact($data);
 		  }
 }
 ?>

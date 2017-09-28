@@ -187,7 +187,7 @@ $("#updateImageForm #type_id").on("change",function(){
 		});
 	});
 	/*End type*/
-	/*=============================================*/
+	/*========================================================================*/
 
 	/*start folder*/
 	$("#addFolderBtn").on("click",function(){
@@ -302,11 +302,7 @@ $("#updateImageForm #type_id").on("change",function(){
 	});
 	/*End Testimonial*/
 
-
-
-
-
-	/*=============Login=============*/
+	/*=============Login====================================================*/
 	$(".admin-login-btn").on("click",function(){
 		var data={
 			"email":$("#email").val(),
@@ -330,7 +326,27 @@ $("#updateImageForm #type_id").on("change",function(){
 		});
 
 	});
-	/*===============================*/
+
+
+	/*==================================Contact=====================================*/
+	$("#contact").on("click",function(){
+		var baseURL=$("#base_url").val();
+		var formData=new FormData($("#contactForm")[0]);
+		$.ajax({
+				url:baseURL+"Contact/contactUs/",
+				data:formData,
+				type:"POST",
+				processData:false,
+				contentType:false,
+				success:function(result){
+					alert("Inquiry has been sent Successfully.. Thank you...");
+					window.location.href="#!";
+				}
+		});
+	});
+
+	/*===============================================================================*/
+	/*==============================================================================*/
 
 	/*===== Navigation Menu =====*/
 
@@ -346,7 +362,6 @@ $("#updateImageForm #type_id").on("change",function(){
 
 	 $('#details').val('');
 });
-
 
 
 
