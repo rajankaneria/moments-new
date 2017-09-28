@@ -7,6 +7,10 @@ class Admin extends CI_Controller
 
 	public function index()
 	{		
+		if($this->session->userdata('email')) {
+		    header('location:'.base_url()."admin/gallery_type");
+		    exit();
+		}
 		$headerData = array(
 			"pageTitle" => "Admin Login",
 			"stylesheet" => array("admin-login.css")
@@ -24,6 +28,10 @@ class Admin extends CI_Controller
 	}
 	
 	public function gallery_type(){
+		if(!$this->session->userdata('email')) {
+		    header('location:'.base_url()."admin/");
+		    exit();
+		}
 		$this->load->model('admin_model');
 		$allTypeData=$this->admin_model->allTypeData();		
 
@@ -44,6 +52,7 @@ class Admin extends CI_Controller
 	}
 
 	public function addType(){
+
 		$data=$_POST['data'];
 		$this->load->model("admin_model");
 		$this->admin_model->addType($data);
@@ -70,6 +79,11 @@ class Admin extends CI_Controller
 
 /*=================================Folder==================================================*/
 	public function gallery_folder(){
+
+		if(!$this->session->userdata('email')) {
+		    header('location:'.base_url()."admin/");
+		    exit();
+		}
 
 		$this->load->model("admin_model");
 		$this->load->model("gallery_model");
@@ -124,6 +138,13 @@ class Admin extends CI_Controller
 
 	/*=========================================Image=======================================*/
 	public function gallery_images(){
+		
+		if(!$this->session->userdata('email')) {
+		    header('location:'.base_url()."admin/");
+		    exit();
+		}
+
+
 		$this->load->model("admin_model");
 		$allImageData=$this->admin_model->allImageData();	
 
@@ -238,6 +259,13 @@ class Admin extends CI_Controller
 
 	/*==================================Client Logo=======================================*/
 	public function clients(){
+
+		if(!$this->session->userdata('email')) {
+		    header('location:'.base_url()."admin/");
+		    exit();
+		}
+
+
 		$this->load->model("admin_model");
 		$allClientData=$this->admin_model->allClientData();		
 
@@ -333,6 +361,13 @@ class Admin extends CI_Controller
 
 	public function testimonials()
 	{	
+
+
+		if(!$this->session->userdata('email')) {
+		    header('location:'.base_url()."admin/");
+		    exit();
+		}
+		
 		$this->load->model("Admin_model");	
 		$testData=$this->Admin_model->allTestData();
 		$headerData = array(
@@ -415,5 +450,10 @@ class Admin extends CI_Controller
 			echo json_encode($output);
 		}
 
+		  public function logout(){
+		  		$this->session->unset_userdata("email");
+				$this->session->sess_destroy();
+				header('location:'.base_url()."admin");
+		  }
 }
 ?>
