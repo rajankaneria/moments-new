@@ -1,5 +1,5 @@
 <div class="row">
-<form id="addImageForm" method="post" enctype="multipart/form-data">
+<form id="updateImageForm" method="post" enctype="multipart/form-data">
 	<div class="row">
     <center><h5>Upload Gallery Image</h5></center>
   </div>
@@ -40,6 +40,7 @@
     <div class="input-field col s12">
       <a href="#" onclick="$('#addImage-input input').click()" class="btn bule">Upload File</a>
     </div>
+    <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
   </div>
 
     </form>
