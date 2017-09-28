@@ -164,6 +164,25 @@ body{
     .main-image{
         position: relative;
     }
+    .main-image img {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+    .row.client-container {
+        margin-top: 100px;
+        width: 90%;
+    }
+
+    .client-image-container {
+        position: relative;
+        overflow: hidden;
+        height: auto;
+        padding: 25px;
+        background: #fff;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
     .main-content {
         background: rgba(255,255,255,0.85);
         width: 100% ;
@@ -190,5 +209,9 @@ body{
     .main-footer{
         position: fixed !important;
         bottom: 0 !important;
+    }
+
+    .main-image-overlay{
+        position: fixed;
     }
 
