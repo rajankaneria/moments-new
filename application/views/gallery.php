@@ -4,11 +4,11 @@
 <div class="gallery-type-select">
 		<div class="gallery-type" data-target="imageCollection">
 			<div class="image-container"><img src="<?php echo base_url(); ?>html/images/photocam.png"/></div>
-			<div class="gallery-title">Photos</div>
+			<!-- <div class="gallery-title">Photos</div> -->
 		</div>
 		<div class="gallery-type" data-target="videoCollection">
 			<div class="image-container"><img src="<?php echo base_url(); ?>html/images/videocam.png"/></div>
-			<div class="gallery-title">Videos</div>
+			<!-- <div class="gallery-title">Videos</div> -->
 		</div>
 </div>
 
