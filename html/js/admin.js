@@ -329,7 +329,7 @@ $("#updateImageForm #type_id").on("change",function(){
 
 
 	/*==================================Contact=====================================*/
-	$("#contact").on("click",function(){
+	$("#send").on("click",function(){
 		var baseURL=$("#base_url").val();
 		var formData=new FormData($("#contactForm")[0]);
 		$.ajax({
@@ -344,6 +344,8 @@ $("#updateImageForm #type_id").on("change",function(){
 				}
 		});
 	});
+	 $('#message').val('');
+  	 $('#message').trigger('autoresize');
 
 	/*===============================================================================*/
 	/*==============================================================================*/
