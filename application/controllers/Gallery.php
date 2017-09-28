@@ -6,6 +6,11 @@ class Gallery extends CI_Controller {
 	
 	public function index()
 	{		
+
+		$this->load->model("gallery_model");
+		$videoFolders = $this->gallery_model->getVideoFolders();
+		$imageFolders = $this->gallery_model->getImageFolders();
+
 		$headerData = array(
 			"pageTitle" => "Gallery",
 			"stylesheet" => array("gallery.css")
@@ -15,7 +20,7 @@ class Gallery extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "gallery",
-            "viewData" => array(),
+            "viewData" => array("imageFolder"=>$imageFolders,"videoFolder"=>$videoFolders),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
