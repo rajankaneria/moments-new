@@ -89,7 +89,7 @@
 
 
 <!-- our team on mobile -->
-<div>
+<div class="hide-on-large-only">
 	<div class="sub-content">
 		<div class="sub-content-title">Our Team</div>
 		<div class="sub-content-description row">
