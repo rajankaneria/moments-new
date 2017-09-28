@@ -51,7 +51,7 @@
 
 
 
-<div class="sub-content">
+<div class="sub-content desktop-team">
 	<div class="sub-content-title">Our Team</div>
 	<div class="sub-content-description row">
 		<div class="team-member-container active" data-target="hirav_shah">
@@ -89,7 +89,7 @@
 
 
 <!-- our team on mobile -->
-<div class="hide-on-large-only">
+<div class="hide-on-large-only mobile-team-title">
 	<div class="sub-content">
 		<div class="sub-content-title">Our Team</div>
 		<div class="sub-content-description row">
@@ -130,6 +130,40 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="mobile main-content" id="krishna_shah">
+		<div class="title">Krishna <span>Shah</span></div>
+		<div class="row">
+			<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/krishna_shah.jpg"/></div>
+			<div class="team-member-bio">
+				<p>She is the Co -Founder of the company. She works diligently to bring out the best in the team. She has excellent background in operational management.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile main-content" id="vivek_patel">
+		<div class="title">VIVEK <span>PATEL</span></div>
+		<div class="row">
+			<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/vivek_patel.jpg"/></div>
+			<div class="team-member-bio">
+				<p>He has expertise and experience of more than 5 years into Sales and Marketing. He is an enthusiast and interested in bringing a creative angle to his work and understands the proper need of the client.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile main-content" id="nilesh_patel">
+		<div class="title">NILESH <span>PATEL</span></div>
+		<div class="row">
+			<div class="team-member-photo"><img src="<?php echo base_url(); ?>html/images/nilesh_patel.jpg"/></div>
+			<div class="team-member-bio">
+				<p>He has great passion to work in the field of event management; he specializes in coordination and handles the Accounts and Finance Departments.</p>
+			</div>
+		</div>
+	</div>
+
+
+
 
 </div>
 <!-- over our team on mobile -->

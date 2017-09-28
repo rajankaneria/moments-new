@@ -5,7 +5,7 @@ $(function(){
 	  }, 600, function() {
 	    // Animation complete.
 	});
-	$(".team-member-container").on("click",function(){
+	$(".desktop-team .team-member-container").on("click",function(){
 		$(".team-member-container").removeClass("active");
 		$(this).addClass("active");
 		var target = $(this).data("target");
@@ -24,6 +24,16 @@ $(function(){
 
 
 	/*mobile Responsive*/
+
+	$(".mobile-team-title .team-member-container").on("click",function(){
+		$(".mobile-team-title .team-member-container").removeClass("active");
+		$(this).addClass("active");
+		var target = $(this).data("target");
+		console.log(".mobile.main-content#"+target);
+		$(".mobile.main-content").hide();
+		$(".mobile.main-content#"+target).show();
+		
+	});
 
 
 
