@@ -1,0 +1,78 @@
+body{
+    overflow:hidden;
+}
+.main-footer {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: rgba(238,49,69,0.85);
+    bottom: 0;
+}
+
+.form-area{
+    margin-top: 100px;
+}
+.form-title{
+    text-align: center;
+}
+.form-title h5{
+    color: #fff;
+}
+.contact-form-area{
+    background: rgba(0,0,0,0.75);
+    position: relative;
+    margin-top: 100px;
+    padding: 25px;
+    width: 70%;
+    margin:0 auto; 
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #10ade4;
+    -webkit-box-shadow: 0 1px 0 0 #10ade4;
+    box-shadow: 0 1px 0 0 #10ade4;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    color: #10ade4;
+}
+
+/*======== Navigation for mobile =========*/
+
+@media(max-width: 768px){
+    body{
+        overflow: auto;
+    }
+    .slide-btn {
+        position: fixed;
+        padding: 25px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: #000;
+    }
+    .site-logo{
+        text-align: center;
+        float: none;
+    }
+    .main-image{
+        position: absolute;
+    }
+    .navigation {
+        padding: 4px;
+        padding-left: 20px;
+        position: fixed;
+        top: 0;
+    }
+    .main-footer{
+        position: fixed !important;
+        bottom: 0 !important;
+    }
+
+    .contact-form-area{
+        width: 90%;
+    }
+
+    .main-image img {
+        width: auto;
+        height: 100%;
+    }
+}
