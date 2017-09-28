@@ -32,7 +32,7 @@
         <div class="menu-item"><a href="<?php echo base_url(); ?>team">Our Team</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>services">Services</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>gallery">Gallery</a></div>
-        <div class="menu-item"><a href="#">Clients</a></div>
+        <div class="menu-item"><a href="<?php echo base_url(); ?>clients">Clients</a></div>
         <div class="menu-item"><a href="#">Testimonial</a></div>
         <div class="menu-item"><a href="#">Contact</a></div>
     </div>
@@ -48,8 +48,8 @@
     <li><a href="<?php echo base_url(); ?>home">Home</a></li>
     <li><a href="<?php echo base_url(); ?>team">Our Team</a></li>
     <li><a href="<?php echo base_url(); ?>services">Services</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#!">Clients</a></li>
+    <li><a href="<?php echo base_url(); ?>gallery">Gallery</a></li>
+    <li><a href="<?php echo base_url(); ?>clients">Clients</a></li>
     <li><a href="#!">Testimonial</a></li>
     <li><a href="#!">Contact</a></li>
   </ul>
