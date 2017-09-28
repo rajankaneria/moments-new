@@ -343,6 +343,11 @@ $("#updateImageForm #type_id").on("change",function(){
 					window.location.href="#!";
 				}
 		});
+		$("#contactForm input").val("");
+		$("#send").val("Send");
+		$("#contactForm textarea").val("");
+
+		
 	});
 	 $('#message').val('');
   	 $('#message').trigger('autoresize');
