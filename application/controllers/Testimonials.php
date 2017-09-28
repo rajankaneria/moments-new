@@ -6,6 +6,8 @@ class Testimonials extends CI_Controller {
 	
 	public function index()
 	{		
+		$this->load->model("admin_model");
+		$allTestData=$this->admin_model->allTestData();
 
 		$headerData = array(
 			"pageTitle" => "Testimonials",
@@ -16,7 +18,7 @@ class Testimonials extends CI_Controller {
 		);
 		$viewData = array(
 			"viewName" => "testimonials",
-            "viewData" => array(),
+            "viewData" => array("allTestData"=>$allTestData),
 			"headerData" => $headerData,
 			"footerData" => $footerData	
 		);
