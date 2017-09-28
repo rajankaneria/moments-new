@@ -42,6 +42,9 @@ body{
 	width:100%;
 	overflow: hidden;
 }
+.btn{
+    background: #cf293f !important;
+}
 .navigation {
     height: 20%;
     max-height: 80px;

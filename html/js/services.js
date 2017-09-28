@@ -5,7 +5,7 @@ $(function(){
 	  }, 600, function() {
 	    // Animation complete.
 	});
-	$(".service-container").on("click",function(){
+	$(".desktop-container .service-container").on("click",function(){
 		$(".service-container").removeClass("active");
 		$(this).addClass("active");
 		var target = $(this).data("target");
@@ -23,6 +23,20 @@ $(function(){
 			    // Animation complete.
 			});
 		});
+	});
+
+	$(".mobile-container .service-container").on("click",function(){
+		$(".service-container").removeClass("active");
+		$(this).addClass("active");
+		var target = $(this).data("target");
+
+		$(".main-image img").hide();
+		$(".main-image img#bgImage-"+target).show();
+
+
+		$(".main-content").hide();
+		$(".main-content#"+target).show();
+
 	});
 
 
