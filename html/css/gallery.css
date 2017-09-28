@@ -212,5 +212,16 @@
         position: fixed !important;
         bottom: 0 !important;
     }
-
+    .image-container img {
+        display: block !important;
+        width: 100%;
+        float: left;
+        height: auto;
+        min-height: 130px;
+    }
+    .image-collection-title {
+        font-size: 14px;
+        color: #cf293f;
+        line-height: 18px;
+    }
 }
