@@ -312,18 +312,19 @@ $("#updateImageForm #type_id").on("change",function(){
 			"email":$("#email").val(),
 			"password":$("#password").val()
 		};
-		$.post(baseURL+"Admin/doLogin/",{data:data},function(data){			
+		$.post(baseURL+"admin/doLogin/",{data:data},function(data){			
 		var data=$.parseJSON(data);
 
 		if(data.status=="ok"){
 			alert("Login successfully...")
-			window.location.href=baseURL+"Admin/gallery_type/";
+			window.location.href=baseURL+"admin/gallery_type/";
 		}
 		else if(data.status=="fail"){
 			alert("Login Fail...");
-			window.location.href="#!";
+			//window.location.href="#!";
 		}
-		else{console.log(data);
+		else{
+			console.log(data);
 		}
 
 		});

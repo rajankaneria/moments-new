@@ -300,3 +300,7 @@ div#addTypeModal h5{
     width: 100%;
   }
 }
+
+body{
+overflow: auto !important;
+}

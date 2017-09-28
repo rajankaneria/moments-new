@@ -24,7 +24,7 @@
         <td><?php echo $imageRow['id']; ?></td> 
         <td><?php echo $imageRow['type_id']; ?></td>   
         <td><?php echo $imageRow['folder_id']; ?></td>    
-       <td> <img src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image']; ?>"></td>
+       <td> <img src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image']; ?>" style="height:50px; width: auto;"></td>
            
         <td class="right-align blog-btn">
         <a data-image-id="<?php echo $imageRow['id']; ?>" class="btn-floating waves-effect waves-light red img-delete-btn"><i class="material-icons">delete</i></a>
