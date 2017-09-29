@@ -122,4 +122,8 @@
 
 </div>
  
+<div class="map-area">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.3493788941723!2d72.49996948414191!3d22.99853253314463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9adcefc40b1d%3A0xfd51a54bf61b4464!2sDev+Prime!5e0!3m2!1sen!2sin!4v1506676265559" frameborder="1" class="map" allowfullscreen></iframe>
+</div>
+
 <div class="main-footer"></div>

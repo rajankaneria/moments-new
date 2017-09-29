@@ -16,7 +16,7 @@ body{
 }
 /*Contact area*/
 .contact-area{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.75);
     width: 95%;
     margin: 0 auto;
     margin-top: 100px;
@@ -135,7 +135,14 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 /*input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
     color: #10ade4;
 }*/
-
+.map-area{
+    width: 100%;
+}
+.map{
+    width: 100%;
+    border: 2px solid #fff;
+    height: 300px;
+}
 /*======== Navigation for mobile =========*/
 
 @media(max-width: 768px){
