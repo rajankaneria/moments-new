@@ -19,7 +19,7 @@
 }
 
 .main-footer {
-    position: absolute;
+    position: fixed;
     height: 10px;
     width: 100%;
     background: rgba(238,49,69,0.85);
@@ -81,13 +81,6 @@
     margin-top: 0px;
 }
 
-.main-footer {
-    position: absolute;
-    height: 10px;
-    width: 100%;
-    background: rgba(238,49,69,0.85);
-    bottom: 0;
-}
 
 .navigation {
     border-bottom: 3px solid #cf293f;
