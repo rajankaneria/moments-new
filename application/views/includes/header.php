@@ -33,7 +33,7 @@
         <div class="menu-item"><a href="<?php echo base_url(); ?>services">Services</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>gallery">Gallery</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>clients">Clients</a></div>
-        <div class="menu-item"><a href="<?php echo base_url(); ?>testimonials">Testimonial</a></div>
+        <div class="menu-item"><a href="<?php echo base_url(); ?>testimonials">Testimonials</a></div>
         <div class="menu-item"><a href="<?php echo base_url(); ?>contact">Contact</a></div>
     </div>
 </div>
@@ -50,7 +50,7 @@
     <li><a href="<?php echo base_url(); ?>services">Services</a></li>
     <li><a href="<?php echo base_url(); ?>gallery">Gallery</a></li>
     <li><a href="<?php echo base_url(); ?>clients">Clients</a></li>
-    <li><a href="<?php echo base_url(); ?>testimonials">Testimonial</a></li>
+    <li><a href="<?php echo base_url(); ?>testimonials">Testimonials</a></li>
     <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse slide-btn"><i class="material-icons">menu</i></a>

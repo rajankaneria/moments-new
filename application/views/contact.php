@@ -1,10 +1,10 @@
 <div class="main-image"><div class="main-image-overlay"></div><img src="<?php echo base_url(); ?>html/images/home-bg.jpg"/></div>
 
-<div class="contact-area">
+<div class="contact-area" style="background: none;">
 	
 	<!-- form area -->
 	<div class="row">
-		<div class="col s12 m6 contact-us">
+		<div class="col s12 m6 contact-us" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(50% - 20px);">
 			<div class="white-text">
 				<h5>Contact Us</h5>
 			</div>
@@ -33,7 +33,7 @@
 
 		<!-- Frenchises Aoolication form -->
 
-		<div class="col s12 m6 franchies-area">
+		<div class="col s12 m6 franchies-area" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(50% - 20px);">
 			<div class="white-text">
 				<h5>Franchise Application</h5>
 			</div>
@@ -76,7 +76,7 @@
 	<!-- Locationa ofiices -->
 	<div class="row">
 		<div class="col s12 m6">
-			<div class="addres-area white-text">
+			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px;">
 				<div class="corporateOffice-area row">
 					<h5>CORPORATE OFFICE</h5>
 					<div class="location-area col s12 m6">
@@ -97,7 +97,7 @@
 			</div>
 		</div>
 		<div class="col s12 m6">
-			<div class="addres-area white-text">
+			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px;">
 				<div class="branchOffice-area row">
 					<h5>BRANCH OFFICE</h5>
 					<div class="location-area col s12 m6">
