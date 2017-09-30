@@ -55,7 +55,7 @@
 		      <label for="city">City</label>
 		    </div>
 		    <div class="col s12 m4">
-				<h6 class="white-text">Business Experience</h6>
+				<h6 class="white-text"><label for="textarea1">Business Experience</label></h6>
 		      <input name="group1" type="radio" id="yes" />
       		  <label for="yes">Yes</label>&nbsp;&nbsp;
       		  <input name="group1" type="radio" id="no" />
@@ -75,8 +75,8 @@
 
 	<!-- Locationa ofiices -->
 	<div class="row">
-		<div class="col s12 m6">
-			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px;">
+		<div class="col s12 m6 ftr-contact">
+			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:0px;">
 				<div class="corporateOffice-area row">
 					<h5>CORPORATE OFFICE</h5>
 					<div class="location-area col s12 m6">
@@ -96,8 +96,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s12 m6">
-			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px;">
+		<div class="col s12 m6 ftr-contact">
+			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:0px;">
 				<div class="branchOffice-area row">
 					<h5>BRANCH OFFICE</h5>
 					<div class="location-area col s12 m6">

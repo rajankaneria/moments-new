@@ -59,7 +59,7 @@ textarea{
 /*Address*/
 
 .addres-area {
-    border: 1px solid rgba(255, 255, 255, 0.34);
+    /*border: 1px solid rgba(255, 255, 255, 0.34);*/
     padding: 25px;
     width: 100%;
     margin: 0 auto;
@@ -186,4 +186,28 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
         width: auto;
         height: 100%;
     }
-}
+
+    .contact-us {
+        margin-bottom: 20px !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 25px !important;
+    }
+    .franchies-area {
+        margin-bottom: 20px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        margin-top: 25px !important;
+        padding: 25px !important;
+    }
+    .addres-area
+    {
+    padding: 25px !important;
+    text-align: center;
+    border: none;
+    margin-bottom: 25px !important;
+    }
+    .ftr-contact{
+        padding: 0px !important;
+    }
+}   
