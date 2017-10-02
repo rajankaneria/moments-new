@@ -79,19 +79,25 @@
 			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:0px;">
 				<div class="corporateOffice-area row">
 					<h5>CORPORATE OFFICE</h5>
-					<div class="location-area col s12 m6">
-						<center><i class="small material-icons">location_on</i></center>
-						<li>703, Dev Prime, B/H Divyabhaskar,</li>
-						<li>Prahladnagar, Ahmedabad</li>
+					<div class="row row-box">
+						<div class="location-area col s2 m1"><i class="small material-icons">location_on</i></div>
+						<div class="location-area col s10 m11">
+							<li>703, Dev Prime, B/H Divyabhaskar,</li>
+							<li>Prahladnagar, Ahmedabad</li>
+						</div>
 					</div>
-					<div class="phone-are col s12 m6">
-						<center><i class="small material-icons">phone</i></center>
-						<li><span>+91</span> 94290 15444</li>
-						<li><span>+91</span> 79400 33588</li>
+					<div class="row row-box">
+						<div class="phone-are col s2 m1"><i class="small material-icons">phone</i></div>
+						<div class="phone-are col s10 m11 ">
+							<li><span>+91</span> 94290 15444 ,</li>
+							<li><span>+91</span> 79400 33588</li>
+						</div>
 					</div>
-					<div class="email-area col s12 m12">
-						<center><i class="small material-icons">mail</i></center>
-						<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
+					<div class="row row-box">
+					<div class="email-area col s2 m1"><i class="small material-icons">mail</i></div>
+						<div class="email-area col s10 m11">
+							<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -100,19 +106,24 @@
 			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:0px;">
 				<div class="branchOffice-area row">
 					<h5>BRANCH OFFICE</h5>
-					<div class="location-area col s12 m6">
-						<center><i class="small material-icons">location_on</i></center>
-						<li>703, Dev Prime, B/H Divyabhaskar,</li>
-						<li>Prahladnagar, Ahmedabad</li>
+					<div class="row row-box">
+						<div class="location-area col s2 m1"><i class="small material-icons">location_on</i></div>
+						<div class="location-area col s10 m11">
+							<li>M-15, Agrasen Point, Citylight,</li>
+							<li>Surat.</li>
+						</div>
 					</div>
-					<div class="phone-are col s12 m6">
-						<center><i class="small material-icons">phone</i></center>
-						<li><span>+91</span> 94290 15444</li>
-						<li><span>+91</span> 79400 33588</li>
+					<div class="row row-box">
+						<div class="phone-are col s2 m1"><i class="small material-icons">phone</i></div>
+						<div class="phone-are col s10 m11 ">
+							<li><span>+91</span> 93742 95095</li>
+						</div>
 					</div>
-					<div class="email-area col s12 m12">
-						<center><i class="small material-icons">mail</i></center>
-						<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
+					<div class="row row-box">
+					<div class="email-area col s2 m1"><i class="small material-icons">mail</i></div>
+						<div class="email-area col s10 m11">
+							<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
+						</div>
 					</div>
 				</div>
 			</div>

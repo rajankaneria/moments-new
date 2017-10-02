@@ -75,6 +75,7 @@ textarea{
 }
 .corporateOffice-area li{
     list-style: none;
+    text-align: left;
 }
 .location-area{
     padding: 15px 0px !important;
@@ -83,11 +84,17 @@ textarea{
     padding: 15px 0px !important;
 }
 .phone-are li{
-    text-align: center;
-    color: #fff;
+    text-align: left;
+    display: inline-block;
+    padding-right: 10px;
 }
 .email-area li a {
     color: rgba(255, 255, 255, 0.7);
+    float: left;
+    padding-left: 5px;
+}
+.row-box{
+    margin-bottom: 0px;
 }
 .email-area {
     padding: 15px 0px !IMPORTANT;
@@ -105,6 +112,7 @@ textarea{
 }
 .branchOffice-area li{
     list-style: none;
+    text-align: left;
 }
 
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
@@ -203,7 +211,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     .addres-area
     {
     padding: 25px !important;
-    text-align: center;
+    text-align: left;
     border: none;
     margin-bottom: 25px !important;
     }
