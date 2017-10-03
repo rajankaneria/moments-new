@@ -33,102 +33,98 @@
 
 		<!-- Frenchises Aoolication form -->
 
-		<div class="col s12 m6 franchies-area" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(50% - 20px);">
-			<div class="white-text">
-				<h5>Franchise Application</h5>
+		<div class="col s12 m6">
+			<div class="row">
+				<div class="col s12 m12" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(100% - 20px);">
+					<div class="office-contact">
+						<div class="header">CORPORATE OFFICE</div>
+						<div class="details">
+							<div class="row"><div class="contect-icon"><i class="small material-icons">location_on</i></div><div class="contect-text">703, Dev Prime, B/H Divyabhaskar, Prahladnagar, Ahmedabad</div></div>
+							<div class="row"><div class="contect-icon"><i class="small material-icons">phone</i></div><div class="contect-text">+91-9429015444, +91-7940033588</div></div>
+							<div class="row"><div class="contect-icon"><i class="small material-icons">mail</i></div><div class="contect-text"><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></div></div>
+						</div>
+					</div>
+
+					<div class="office-contact">
+						<div class="header">BRANCH OFFICE</div>
+						<div class="details">
+							<div class="row"><div class="contect-icon"><i class="small material-icons">location_on</i></div><div class="contect-text">M-15, Agrasen Point, Citylight, Surat.</div></div>
+							<div class="row"><div class="contect-icon"><i class="small material-icons">phone</i></div><div class="contect-text">+91-9374295095</div></div>
+							<div class="row"><div class="contect-icon"><i class="small material-icons">mail</i></div><div class="contect-text"><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></div></div>
+						</div>
+					</div>
+
+
+					<!--
+					<div class="contact-address-container">
+						<div class="white-text">
+							<h5>CORPORATE OFFICE</h5>
+						</div>
+						<div class="row row-box">
+							<div class="location-area col s2 m1"><i class="small material-icons">location_on</i></div>
+							<div class="location-area col s10 m11">
+								M-15, Agrasen Point, Citylight, Surat.
+							</div>
+						</div>
+						<div class="row row-box">
+							<div class="phone-are col s2 m1"><i class="small material-icons">phone</i></div>
+							<div class="phone-are col s10 m11 ">
+								<li><span>+91</span> 94290 15444 ,</li>
+								<li><span>+91</span> 79400 33588</li>
+							</div>
+						</div>
+						<div class="row row-box">
+							<div class="email-area col s2 m1"><i class="small material-icons">mail</i></div>
+							<div class="email-area col s10 m11">
+								<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="contact-address-container">
+						<div class="white-text">
+							<h5>BRANCH OFFICE</h5>
+						</div>
+						<div class="row row-box">
+							<div class="location-area col s2 m1"><i class="small material-icons">location_on</i></div>
+							<div class="location-area col s10 m11">
+								M-15, Agrasen Point, Citylight, Surat.
+							</div>
+						</div>
+						<div class="row row-box">
+							<div class="phone-are col s2 m1"><i class="small material-icons">phone</i></div>
+							<div class="phone-are col s10 m11 ">
+								<li><span>+91</span> 93742 95095</li>
+							</div>
+						</div>
+						<div class="row row-box">
+							<div class="email-area col s2 m1"><i class="small material-icons">mail</i></div>
+							<div class="email-area col s10 m11">
+								<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
+							</div>
+						</div>
+					</div>
+					-->
+
+				</div>
+			
+
+
 			</div>
-		<form method="post" id="contactForm">
-			<div class="input-field col s12 m6">
-		      <input id="full_name" name="full_name" type="text" class="validate" required="required">
-		      <label for="full_name">Full Name</label>
-		    </div>
-		    <div class="input-field col s12 m6">
-		      <input id="email" name="email" type="email" class="validate" required="required">
-		      <label for="email">E-mail</label>
-		    </div>
-		    <div class="input-field col s12 m4">
-		      <input id="mobile" maxlength="10" name="mobile" type="text" class="validate" required="required">
-		      <label for="mobile">Mobile</label>
-		    </div>
-		    <div class="input-field col s12 m4">
-		      <input id="city" name="city" type="text" class="validate" required="required">
-		      <label for="city">City</label>
-		    </div>
-		    <div class="col s12 m4">
-				<h6 class="white-text"><label for="textarea1">Business Experience</label></h6>
-		      <input name="group1" type="radio" id="yes" />
-      		  <label for="yes">Yes</label>&nbsp;&nbsp;
-      		  <input name="group1" type="radio" id="no" />
-      		  <label for="no">No</label>
-		    </div>
-		    <div class="input-field col s12">
-		      <textarea id="message" name="message" class="materialize-textarea"></textarea>
-		  	  <label for="textarea1">Message</label>
-		    </div>
-		    <div class="input-field col s12">
-		      <center><input type="button" name="send" value="send" class="btn contact-btn" id="send"></center>
-		    </div>
-		</form>
+
 		</div>
+
+
+
+
+
+
+
+
 	</div>
 
 
-	<!-- Locationa ofiices -->
-	<div class="row">
-		<div class="col s12 m6 ftr-contact">
-			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:0px;">
-				<div class="corporateOffice-area row">
-					<h5>CORPORATE OFFICE</h5>
-					<div class="row row-box">
-						<div class="location-area col s2 m1"><i class="small material-icons">location_on</i></div>
-						<div class="location-area col s10 m11">
-							<li>703, Dev Prime, B/H Divyabhaskar,</li>
-							<li>Prahladnagar, Ahmedabad</li>
-						</div>
-					</div>
-					<div class="row row-box">
-						<div class="phone-are col s2 m1"><i class="small material-icons">phone</i></div>
-						<div class="phone-are col s10 m11 ">
-							<li><span>+91</span> 94290 15444 ,</li>
-							<li><span>+91</span> 79400 33588</li>
-						</div>
-					</div>
-					<div class="row row-box">
-					<div class="email-area col s2 m1"><i class="small material-icons">mail</i></div>
-						<div class="email-area col s10 m11">
-							<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col s12 m6 ftr-contact">
-			<div class="addres-area white-text" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:0px;">
-				<div class="branchOffice-area row">
-					<h5>BRANCH OFFICE</h5>
-					<div class="row row-box">
-						<div class="location-area col s2 m1"><i class="small material-icons">location_on</i></div>
-						<div class="location-area col s10 m11">
-							<li>M-15, Agrasen Point, Citylight,</li>
-							<li>Surat.</li>
-						</div>
-					</div>
-					<div class="row row-box">
-						<div class="phone-are col s2 m1"><i class="small material-icons">phone</i></div>
-						<div class="phone-are col s10 m11 ">
-							<li><span>+91</span> 93742 95095</li>
-						</div>
-					</div>
-					<div class="row row-box">
-					<div class="email-area col s2 m1"><i class="small material-icons">mail</i></div>
-						<div class="email-area col s10 m11">
-							<li><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 </div>

@@ -31,6 +31,24 @@
 	border-bottom: 3px solid #cf293f;
 }
 
+/* main image scroller */
+.main-image img{
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    opacity:0.01;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
+.main-image img.active{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    opacity:1;
+
+}
 
 
 

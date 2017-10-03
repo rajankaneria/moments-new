@@ -219,3 +219,47 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
         padding: 0px !important;
     }
 }   
+
+.row.row-box {
+    color: #fff;
+}
+
+
+.office-contact {
+  color: #fff;
+  margin-bottom: 45px;
+}
+.office-contact a {
+  color: #fff;
+}
+.office-contact .details .row {
+  margin-bottom: 0px;
+}
+.office-contact .header {
+  font-size: 21px;
+  border-bottom: 2px solid #781b2a;
+}
+.office-contact .header {
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+
+.contect-icon {
+    padding-top: 2px;
+    margin-right: 10px;
+    float: left;
+
+}
+.contect-icon i {
+    font-size: 20px;
+}
+
+.contect-text {
+    font-size: 14px;
+    color: #969696;
+}
+
+.contect-text a {
+    color: #969696;
+}

@@ -11,6 +11,12 @@ $(function(){
 		var target = $(this).data("target");
 
 
+		$(".main-content").hide();
+		$(".main-content").css("right","10px");
+		$(".main-content#"+target).show();
+		$(".main-content#"+target).css("opacity","0.9");
+
+		/*
 		$(".main-content").animate({
 		    right: "-50%"
 		  }, 200, function() {
@@ -20,6 +26,7 @@ $(function(){
 			    // Animation complete.
 			});
 		});
+		*/
 	});
 
 
