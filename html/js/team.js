@@ -15,7 +15,7 @@ $(function(){
 		$(".main-content").hide();
 		$(".main-content").css("right","10px");
 		$(".main-content#"+target).show();
-		$(".main-content#"+target).css("opacity","0.75");
+		$(".main-content#"+target).css("opacity","0.85");
 		
 		/*
 		$(".main-content").animate({

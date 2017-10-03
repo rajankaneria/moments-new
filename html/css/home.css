@@ -75,7 +75,7 @@
     .main-image{
         position: relative;
     }
-    .main-content {
+    /*.main-content {
         background: rgba(255,255,255,0.85);
         width: 100% ;
         height: auto;
@@ -86,10 +86,32 @@
         -o-clip-path:none;
         clip-path:none;
         right: 0px !important;
+    }   */
+    .main-content {
+        background: rgba(255,255,255,1);
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 25px;
+        -webkit-clip-path:none;
+        -moz-clip-path:none;
+        -o-clip-path:none;
+        clip-path:none;
+        right: 0px !important;
+        margin-top: 330px;
     }   
     .main-footer{
         position: fixed !important;
         bottom: 0 !important;
     }
 
+    .main-image img {
+        width: auto;
+        height: 300px;
+    }
+
+    .main-image img{
+        position: absolute;
+        margin-top: 80px;
+    }
 }
