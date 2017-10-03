@@ -218,6 +218,19 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     .ftr-contact{
         padding: 0px !important;
     }
+
+    .con-details {
+    padding: 25px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 25px !important;
+    }
+    .con-area {
+        padding: 0 !important;
+    }
+    .contect-icon{
+        height: 44px;
+    }
 }   
 
 .row.row-box {

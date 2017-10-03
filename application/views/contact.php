@@ -33,9 +33,9 @@
 
 		<!-- Frenchises Aoolication form -->
 
-		<div class="col s12 m6">
+		<div class="col s12 m6 con-area">
 			<div class="row">
-				<div class="col s12 m12" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(100% - 20px);">
+				<div class="col s12 m12 con-details" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(100% - 20px);">
 					<div class="office-contact">
 						<div class="header">CORPORATE OFFICE</div>
 						<div class="details">
