@@ -1,10 +1,14 @@
 /* team js */
+
+
 $(function(){
+	$(".sub-content").css("opacity","1");
 	$(".main-content#weddingServices").animate({
 	    right: "10"
 	  }, 600, function() {
 	    // Animation complete.
 	});
+	
 	$(".desktop-container .service-container").on("click",function(){
 		$(".service-container").removeClass("active");
 		$(this).addClass("active");

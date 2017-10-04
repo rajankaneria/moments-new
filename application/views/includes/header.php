@@ -7,7 +7,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <title>Moments | <?php echo $pageTitle; ?></title>
     <!-- CSS-->
-    <link href="<?php echo base_url(); ?>html/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>html/css/style.css?<?php echo time(); ?>" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -16,12 +16,28 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="<?php echo base_url(); ?>html/js/script.js"></script>
+    <script src="<?php echo base_url(); ?>html/js/script.js?<?php echo time(); ?>"></script>
     <?php foreach($stylesheet as $fileName){ ?>
-    <link href="<?php echo base_url(); ?>html/css/<?php echo $fileName; ?>" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>html/css/<?php echo $fileName; ?>?<?php echo time(); ?>" rel="stylesheet">
     <?php } ?>
     <script src="https://use.fontawesome.com/4c9f41dc36.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript">
+                
+        $(function(){
+            window.onload = function() {
+                // this will fire after the entire page is loaded, including images
+                //$("title").html("Loaded");
+                $("body").hide();
+                $(".site-overlay").fadeOut(200,function(){
+                    $("body").fadeIn(1000);
+                });
+            };
+        });
+        
+
+
+    </script>
 </head>
 <body>
 
@@ -70,4 +86,23 @@
       <li><a href="https://twitter.com/events_moments" target="_page" class="btn-floating blue"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
       <li><a href="https://www.instagram.com/momentseve/" target="_page" class="btn-floating pink darken-3"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
+  </div>
+
+  <div class="site-overlay">
+      <div class="overlay-content">
+            <div class="site-overlay-logo"><img width="200px" src="<?php echo base_url(); ?>html/images/event_logo.png" class="responsive-img" /></div>
+            <div class="site-preloader">
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                </div>
+          </div>
+      </div>
   </div>
