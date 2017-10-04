@@ -1,3 +1,14 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery/latest/css/lightgallery.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js">
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.1/dist/js/lightgallery.min.js"></script>
+
+
+
+
+
 <div class="main-image"><div class="main-image-overlay"></div><img src="<?php echo base_url(); ?>html/images/home-bg.jpg"/></div>
 
 
@@ -67,12 +78,25 @@
 			<?php foreach ($folderRow["folder_images"] as $imageKey => $imageRow) { ?>
 				<div class=" col s6 m3">
 					<div class="image-item">
-						<div class="image-container"><img class="materialboxed" src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>"/></div>
+						<div id="lightgallery" class="image-container">
+						<li data-src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>">
+							<a href=""><img class="materialboxed" src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>"/>
+							</a>
+						</li>
+						</div>
 					</div>
 				</div>
 			<?php } ?>
 		</div>
-	<?php } ?>
+
+<!-- 	<ul id="lightgallery">
+      <li data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg">
+        <a href="">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+         </a>
+      </li>
+	</ul> -->
+  	<?php } ?>
 
 
 
