@@ -1,15 +1,26 @@
 body{
-    overflow:hidden;
+    overflow:auto;
 }
 .navigation {
     border-bottom: 3px solid #cf293f;
 }
 .main-footer {
-    position: absolute;
+    position: fixed;
     height: 10px;
     width: 100%;
     background: rgba(238,49,69,0.85);
     bottom: 0;
+}
+.main-image{
+    position: fixed;
+}
+/*Contact area*/
+.contact-area{
+    background: rgba(0,0,0,0.75);
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 25px;
 }
 
 .form-area{
@@ -20,6 +31,10 @@ body{
 }
 .form-title h5{
     color: #fff;
+}
+.white-text h5{
+    border-bottom: 2px solid rgba(207, 41, 63, 0.55);
+    padding-bottom: 5px;
 }
 .contact-form-area{
     background: rgba(0,0,0,0.75);
@@ -35,6 +50,90 @@ input   {
 textarea{
     color: #fff;
 }
+.contact-us{
+    margin-bottom: 20px !important; 
+}
+.franchies-area{
+    margin-bottom: 20px !important; 
+}
+/*Address*/
+
+.addres-area {
+    /*border: 1px solid rgba(255, 255, 255, 0.34);*/
+    padding: 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.corporateOffice-area{
+    width: 100%;
+    margin: 0 auto;
+}
+.corporateOffice-area h5 {
+    border-bottom: 2px solid rgba(207, 41, 63, 0.55);
+    padding-bottom: 5px;
+}
+.corporateOffice-area li{
+    list-style: none;
+    text-align: left;
+}
+.location-area{
+    padding: 15px 0px !important;
+}
+.phone-are {
+    padding: 15px 0px !important;
+}
+.phone-are li{
+    text-align: left;
+    display: inline-block;
+    padding-right: 10px;
+}
+.email-area li a {
+    color: rgba(255, 255, 255, 0.7);
+    float: left;
+    padding-left: 5px;
+}
+.row-box{
+    margin-bottom: 0px;
+}
+.email-area {
+    padding: 15px 0px !IMPORTANT;
+    text-align: center;
+    color: #fff !important;
+}
+
+.branchOffice-area{
+    width: 100%;
+    margin: 0 auto;
+}
+.branchOffice-area h5 {
+    border-bottom: 2px solid rgba(207, 41, 63, 0.55);
+    padding-bottom: 5px;
+}
+.branchOffice-area li{
+    list-style: none;
+    text-align: left;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
+        background-color: rgba(207, 41, 63, 0.16);
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
+    border: 2px solid #cf293f;
+}
+i.small.material-icons {
+    color: #cf293f;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px 0 0 #fff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    color: #fff;
+}
 /*input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
     border-bottom: 1px solid #10ade4;
     -webkit-box-shadow: 0 1px 0 0 #10ade4;
@@ -44,12 +143,25 @@ textarea{
 /*input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
     color: #10ade4;
 }*/
-
+.map-area{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0px;
+}
+.map{
+    width: 100%;
+    position: relative;
+    border: 2px solid #fff;
+    height: 300px;
+}
 /*======== Navigation for mobile =========*/
 
 @media(max-width: 768px){
     body{
         overflow: auto;
+    }
+    .contact-area{
+        padding: 15px;
     }
     .slide-btn {
         position: fixed;
@@ -64,7 +176,7 @@ textarea{
         float: none;
     }
     .main-image{
-        position: absolute;
+        position: fixed;
     }
     .navigation {
         padding: 4px;
@@ -85,7 +197,91 @@ textarea{
         width: auto;
         height: 100%;
     }
+<<<<<<< HEAD
     .contact-btn{
         width: 100%;
     }
+=======
+
+    .contact-us {
+        margin-bottom: 20px !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 25px !important;
+    }
+    .franchies-area {
+        margin-bottom: 20px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        margin-top: 25px !important;
+        padding: 25px !important;
+    }
+    .addres-area
+    {
+    padding: 25px !important;
+    text-align: left;
+    border: none;
+    margin-bottom: 25px !important;
+    }
+    .ftr-contact{
+        padding: 0px !important;
+    }
+
+    .con-details {
+    padding: 25px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 25px !important;
+    }
+    .con-area {
+        padding: 0 !important;
+    }
+    .contect-icon{
+        height: 44px;
+    }
+}   
+
+.row.row-box {
+    color: #fff;
+}
+
+
+.office-contact {
+  color: #fff;
+  margin-bottom: 45px;
+}
+.office-contact a {
+  color: #fff;
+}
+.office-contact .details .row {
+  margin-bottom: 0px;
+}
+.office-contact .header {
+  font-size: 21px;
+  border-bottom: 2px solid #781b2a;
+>>>>>>> 50d808e76a09ebd96f80816b4a8147af76fd773d
+}
+.office-contact .header {
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+
+.contect-icon {
+    padding-top: 2px;
+    margin-right: 10px;
+    float: left;
+
+}
+.contect-icon i {
+    font-size: 20px;
+}
+
+.contect-text {
+    font-size: 14px;
+    color: #969696;
+}
+
+.contect-text a {
+    color: #969696;
 }

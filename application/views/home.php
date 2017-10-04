@@ -1,5 +1,15 @@
 
-<div class="main-image"><div class="main-image-overlay"></div><img src="<?php echo base_url(); ?>html/images/home-bg.jpg"/></div>
+<div class="main-image"><div class="main-image-overlay"></div>
+	<img id="bgImage-weddingServices" class="active" src="<?php echo base_url(); ?>html/images/home-bg.jpg"/>
+	<img id="bgImage-sangeet" src="<?php echo base_url(); ?>html/images/sangeet_bg.jpg"/>
+	<img id="bgImage-celebrity" src="<?php echo base_url(); ?>html/images/celebrity_bg.jpg"/>
+	<img id="bgImage-corporate" src="<?php echo base_url(); ?>html/images/corporate_event_bg.jpg"/>
+	<img id="bgImage-exhibition" src="<?php echo base_url(); ?>html/images/exibition_bg.jpg"/>
+	<img id="bgImage-wedding_planner" src="<?php echo base_url(); ?>html/images/wedding_planner_bg.jpg"/>
+	<img id="bgImage-religious" src="<?php echo base_url(); ?>html/images/relegious_bg.jpg"/>
+	<img id="bgImage-builder" src="<?php echo base_url(); ?>html/images/building_bg.jpg"/>
+	<input type="hidden" value="2" id="sliderCount" />
+</div>
 
 
 <!--
