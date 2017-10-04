@@ -1,7 +1,6 @@
 <div class="main-image"><div class="main-image-overlay"></div><img src="<?php echo base_url(); ?>html/images/home-bg.jpg"/></div>
-
 <div class="contact-area" style="background: none;">
-	
+
 	<!-- form area -->
 	<div class="row">
 		<div class="col s12 m6 contact-us" style="background: rgba(0,0,0,0.85);border-radius: 5px; padding: 60px; padding-top: 60px; padding-top: 40px; margin:10px; width:calc(50% - 20px);">
@@ -52,6 +51,13 @@
 							<div class="row"><div class="contect-icon"><i class="small material-icons">phone</i></div><div class="contect-text">+91-9374295095</div></div>
 							<div class="row"><div class="contect-icon"><i class="small material-icons">mail</i></div><div class="contect-text"><a href="mailto:smile@momentsunlimited.in">smile@momentsunlimited.in</a></div></div>
 						</div>
+
+						<!-- <div class="header">Social Media</div>
+						<ul class="social-area">
+							<a href="" class="social-icon "><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+							<a href="" class="social-icon"><i class="social-icon fa fa-twitter-square" aria-hidden="true"></i></a>
+							<a href="" class="social-icon"><i class="social-icon fa fa-instagram" aria-hidden="true"></i></a>
+						</ul> -->
 					</div>
 
 
@@ -108,7 +114,7 @@
 					-->
 
 				</div>
-			
+
 
 
 			</div>

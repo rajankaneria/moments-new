@@ -1,5 +1,18 @@
 /* global style sheet */
 
+/*SOCIAL AREA*/
+.find-btn{
+    background: #df2e40 !important;
+}
+.social-area {
+    top: 25px !important;
+    right: 65px !important;
+}
+.btn-social{
+    bottom: 50px !important;
+}
+
+
 .main-image {
     width: 100%;
     height: 100%;

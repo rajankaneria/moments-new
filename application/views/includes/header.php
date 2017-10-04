@@ -55,3 +55,19 @@
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse slide-btn"><i class="material-icons">menu</i></a>
       
+
+<!-- Social Medias -->
+
+ <div class="fixed-action-btn horizontal btn-social">
+    
+    <!-- <img src="<?php echo base_url(); ?>html/images/social.png" class="find-btn-img"> -->
+    <a class="btn-floating btn-large find-btn">
+      <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+    </a>
+    
+    <ul class="social-area">
+      <li><a href="https://www.facebook.com/momentsevent99/" target="_page" class="btn-floating indigo darken-2"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/events_moments" target="_page" class="btn-floating blue"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/momentseve/" target="_page" class="btn-floating pink darken-3"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
