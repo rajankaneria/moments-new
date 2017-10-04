@@ -22,8 +22,3 @@ function slideChange(){
 	}
 	$("#sliderCount").val(slideNumber);
 }
-
-window.onload = function() {
-    // this will fire after the entire page is loaded, including images
-    //$("title").html("Loaded");
-};
