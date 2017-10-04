@@ -162,9 +162,9 @@
         text-align: center;
         float: none;
     }
-    /*.main-image{
-        position: relative;
-    }*/
+    .main-image{
+        position: fixed;
+    }
         .main-image img {
         width: auto;
         height: 100%;
