@@ -101,6 +101,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+    z-index: 0;
 }
 
 .image-collection-item {}
