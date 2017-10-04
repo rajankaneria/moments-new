@@ -145,9 +145,12 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }*/
 .map-area{
     width: 100%;
+    position: relative;
+    margin-bottom: 0px;
 }
 .map{
     width: 100%;
+    position: relative;
     border: 2px solid #fff;
     height: 300px;
 }

@@ -7,6 +7,8 @@ body{
 #testimonial{
     height: 450px !important;
 }
+
+
 .testimonials-area{
     margin-top: 120px;
     
@@ -66,6 +68,26 @@ body{
     body{
         overflow: auto;
     }
+    
+    .testimonials-area.carousel {
+         height: 100% !important; 
+         overflow-x:hidden !important; 
+         overflow-y: scroll !important; 
+    } 
+    .testimonials-area.carousel .carousel-item {
+         width: 100% !important; 
+         height: 100% !important; 
+    } 
+
+    #testimonial {
+        height: 450px !important;
+        overflow-y: auto;
+        height: 100vh !important;
+        margin-bottom: 25px;
+    }
+
+    html,body{ overflow-x:hidden; height:100vh; }
+
     .testimonials-area{
         position: inherit;
     }
