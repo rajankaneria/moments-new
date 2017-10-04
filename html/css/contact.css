@@ -85,4 +85,7 @@ textarea{
         width: auto;
         height: 100%;
     }
+    .contact-btn{
+        width: 100%;
+    }
 }
