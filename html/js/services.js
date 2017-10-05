@@ -1,5 +1,13 @@
 /* team js */
 
+$(function(){
+            window.onload = function() {
+                // this will fire after the entire page is loaded, including images
+                //$("title").html("Loaded");
+               $(".sub-content-description").css("opacity","1");
+            };
+        });
+
 
 $(function(){
 	$(".sub-content").css("opacity","1");
@@ -18,6 +26,13 @@ $(function(){
 		$(".main-image img#bgImage-"+target).show();
 
 
+		$(".main-content").hide();
+		$(".main-content").css("right","10px");
+		$(".main-content#"+target).show();
+		$(".main-content#"+target).css("opacity","1");
+
+
+		/*
 		$(".main-content").animate({
 		    right: "-50%"
 		  }, 200, function() {
@@ -27,6 +42,7 @@ $(function(){
 			    // Animation complete.
 			});
 		});
+		*/
 	});
 
 	$(".mobile-container .service-container").on("click",function(){

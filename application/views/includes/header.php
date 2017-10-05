@@ -9,6 +9,7 @@
     <!-- CSS-->
     <link href="<?php echo base_url(); ?>html/css/style.css?<?php echo time(); ?>" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet"> 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified CSS -->
@@ -24,6 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript">
                 
+        /*
         $(function(){
             window.onload = function() {
                 // this will fire after the entire page is loaded, including images
@@ -34,6 +36,7 @@
                 });
             };
         });
+        */
         
 
 
@@ -87,7 +90,7 @@
       <li><a href="https://www.instagram.com/momentseve/" target="_page" class="btn-floating pink darken-3"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
   </div>
-
+  <!--
   <div class="site-overlay">
       <div class="overlay-content">
             <div class="site-overlay-logo"><img width="200px" src="<?php echo base_url(); ?>html/images/event_logo.png" class="responsive-img" /></div>
@@ -106,3 +109,4 @@
           </div>
       </div>
   </div>
+  -->

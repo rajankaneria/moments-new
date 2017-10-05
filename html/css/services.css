@@ -145,11 +145,13 @@
 
 p.tagline {
     text-align: center;
-    margin-top: 60px;
-    color: #cc2a3d;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    word-spacing: 1px;
+margin-top: 60px;
+color: #cc2a3d;
+font-size: 18px;
+letter-spacing: 0.5px;
+word-spacing: 4px;
+font-family: Germania One;
+font-weight: 200;
 }
 
 .row.service-description {
@@ -239,5 +241,35 @@ p.tagline {
         height: 300px;
         max-height: 300px;
     }
+    .main-content{
+        top: 285px !important;
+    }
 
+}
+
+
+.row.service-description p span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+body{
+    overflow-y:scroll;
+}
+.main-content{
+    height: 100%;
+    top: 100px;
+}
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+}
+.main-image{
+    position: fixed;
+}
+
+.sub-content-description{
+    opacity: 0.001;
 }
