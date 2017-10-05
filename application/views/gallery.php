@@ -75,18 +75,17 @@
 			<div class="row">
 				<div class="center-align"><a class="btn" onclick="backToImageCollection();">Back</a></div>
 			</div>
+			<div  id="lightgallery_<?php echo $folderRow['id'] ?>">
 			<?php foreach ($folderRow["folder_images"] as $imageKey => $imageRow) { ?>
-				<div class=" col s6 m3">
+				<div class=" col s6 m2" data-src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>">
 					<div class="image-item">
-						<div id="lightgallery" class="image-container">
-						<li data-src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>">
-							<a href=""><img class="materialboxed" src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>"/>
-							</a>
-						</li>
+						<div class="image-container">
+							<img class="lightbox-image" src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>"/>
 						</div>
 					</div>
 				</div>
 			<?php } ?>
+			</div>
 		</div>
 
 <!-- 	<ul id="lightgallery">
@@ -96,6 +95,13 @@
          </a>
       </li>
 	</ul> -->
+	<script type="text/javascript">
+		$(function(){
+			  $('#lightgallery_<?php echo $folderRow['id'] ?>').lightGallery({
+			    pager: true
+			  });
+		});
+	</script>
   	<?php } ?>
 
 
@@ -105,13 +111,29 @@
 			<div class="row">
 				<div class="center-align"><a class="btn" onclick="backToVideoCollection();">Back</a></div>
 			</div>
+			<div  id="lightgallery_<?php echo $folderRow['id'] ?>">
 			<?php foreach ($folderRow["folder_images"] as $imageKey => $imageRow) { ?>
-				<div class=" col s6 m3">
+				<div class=" col s6 m2" data-src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>">
+					<div class="image-item">
+						<div class="image-container">
+							<img class="lightbox-image" src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>"/>
+						</div>
+					</div>
+				</div>				
+				<!-- <div class=" col s6 m3">
 					<div class="image-item">
 						<div class="image-container"><img class="materialboxed" src="<?php echo base_url(); ?>html/images/folder_img/<?php echo $imageRow['image'] ?>"/></div>
 					</div>
-				</div>
+				</div> -->
 			<?php } ?>
+			</div>
 		</div>
+	<script type="text/javascript">
+		$(function(){
+			  $('#lightgallery_<?php echo $folderRow['id'] ?>').lightGallery({
+			    pager: true
+			  });
+		});
+	</script>
 	<?php } ?>
 <div class="main-footer"></div>

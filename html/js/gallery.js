@@ -17,7 +17,7 @@ function backToImageCollection(){
 	$("#imageCollection").fadeIn(200);
 }
 $(document).ready(function(){
-    $('.materialboxed').materialbox();
+    /*$('.materialboxed').materialbox();*/
 	$(".gallery-type").on("click",function(data){
 		var target = $(this).data("target");
 		$(".gallery-type-select").hide();
@@ -29,7 +29,7 @@ $(document).ready(function(){
 		$(".gallery-collection").hide();
 		$(".image-list").hide();
 		$("#"+target).fadeIn(1000);
-		adjustImageSize("img.materialboxed",".image-item");
+		adjustImageSize("img.lightbox-image",".image-item");
 	});
 	/*
 	$('#materialbox-overlay').on('click', function() {
@@ -41,6 +41,6 @@ $(document).ready(function(){
  });
 $(function(){
 	setInterval(function(){
-	    /*adjustImageSize("img.materialboxed",".image-item");*/
+	    /*adjustImageSize("img.lightbox-image",".image-item");*/
 	},10);
 });

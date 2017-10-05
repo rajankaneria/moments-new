@@ -109,6 +109,7 @@
 .image-container {
     overflow: hidden;
     height: 200px;
+    cursor: pointer;
 }
 
 .image-description {
@@ -225,4 +226,16 @@
         color: #cf293f;
         line-height: 18px;
     }
+    .image-list .image-container{
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+}
+
+.image-list .image-container {
+    overflow: hidden;
+    height: 200px;
+    cursor: pointer;
+    border: 3px solid rgba(255,255,255,0.9);
+    border-radius: 2%;
 }
