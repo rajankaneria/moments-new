@@ -57,7 +57,14 @@ $(function(){
 		$(".main-content").hide();
 		$(".main-content#"+target).show();
 
+
+	}),
+	$(document).ready(function(){
+		$(".main-content").hide();
+		$(".main-content#weddingServices").show();
 	});
+
+
 
 
 

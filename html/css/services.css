@@ -145,13 +145,14 @@
 
 p.tagline {
     text-align: center;
-margin-top: 60px;
-color: #cc2a3d;
-font-size: 18px;
-letter-spacing: 0.5px;
-word-spacing: 4px;
-font-family: Germania One;
-font-weight: 200;
+    margin-top: 60px;
+    color: #cc2a3d;
+    line-height: 1;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    word-spacing: 4px;
+    font-family: Germania One;
+    font-weight: 200;
 }
 
 .row.service-description {
@@ -188,7 +189,7 @@ font-weight: 200;
         float: none;
     }
     .main-image{
-        position: relative;
+        position: relative !important;
     }
     .main-content {
         background: rgba(255,255,255,0.85);
@@ -207,7 +208,7 @@ font-weight: 200;
         font-size: 28px;
         font-weight: 300;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 25px;
     }
     .team-member-bio {
         float: left;
@@ -242,7 +243,7 @@ font-weight: 200;
         max-height: 300px;
     }
     .main-content{
-        top: 285px !important;
+        /*top: 300px !important;*/
     }
 
 }
@@ -260,7 +261,7 @@ body{
 }
 .main-content{
     height: 100%;
-    top: 100px;
+ /*   top: 100px;*/
 }
 .main-footer{
     position: fixed;
@@ -272,4 +273,24 @@ body{
 
 .sub-content-description{
     opacity: 0.001;
+}
+
+
+.row.service-description p span:before {
+    font-family: FontAwesome;
+    content: "\f101";
+    padding-right: 5px;
+}
+
+p.tagline:before{
+    font-family: FontAwesome;
+    content: "\f10d";
+    padding-right: 5px;
+    vertical-align: super;
+}
+p.tagline:after{
+    font-family: FontAwesome;
+    content: "\f10e";
+    padding-left: 5px;
+    vertical-align: super;
 }
