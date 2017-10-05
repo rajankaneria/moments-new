@@ -42,7 +42,13 @@ $(function(){
 		$(".mobile.main-content").hide();
 		$(".mobile.main-content#"+target).show();
 		
+	
+	}),
+	$(document).ready(function(){
+		$(".mobile.main-content").hide();
+		$(".mobile.main-content#hirav_shah").show();
 	});
+
 
 
 

@@ -147,9 +147,12 @@ p.tagline {
     text-align: center;
     margin-top: 60px;
     color: #cc2a3d;
-    font-size: 16px;
+    line-height: 1;
+    font-size: 18px;
     letter-spacing: 0.5px;
-    word-spacing: 1px;
+    word-spacing: 4px;
+    font-family: Germania One;
+    font-weight: 200;
 }
 
 .row.service-description {
@@ -186,7 +189,7 @@ p.tagline {
         float: none;
     }
     .main-image{
-        position: relative;
+        position: relative !important;
     }
     .main-content {
         background: rgba(255,255,255,0.85);
@@ -205,7 +208,7 @@ p.tagline {
         font-size: 28px;
         font-weight: 300;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 25px;
     }
     .team-member-bio {
         float: left;
@@ -231,13 +234,63 @@ p.tagline {
         padding: 0px 10px;
     }
     .main-image-overlay{
-        min-height: 300px;
-        max-height: 300px;
+        min-height: 330px;
+        max-height: 330px;
     }
     .main-image img {
         width: 100%;
-        height: 300px;
-        max-height: 300px;
+        height: 330px;
+        max-height: 330px;
+    }
+    .main-content{
+        /*top: 300px !important;*/
     }
 
+}
+
+
+.row.service-description p span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+body{
+    overflow-y:scroll;
+}
+.main-content{
+    height: 100%;
+ /*   top: 100px;*/
+}
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+}
+.main-image{
+    position: fixed;
+}
+
+.sub-content-description{
+    opacity: 0.001;
+}
+
+
+.row.service-description p span:before {
+    font-family: FontAwesome;
+    content: "\f101";
+    padding-right: 5px;
+}
+
+p.tagline:before{
+    font-family: FontAwesome;
+    content: "\f10d";
+    padding-right: 5px;
+    vertical-align: super;
+}
+p.tagline:after{
+    font-family: FontAwesome;
+    content: "\f10e";
+    padding-left: 5px;
+    vertical-align: super;
 }

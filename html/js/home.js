@@ -5,7 +5,6 @@ $(function(){
 	  }, 600, function() {
 	    // Animation complete.
 	});
-	//$("title").html("Loading...");
 	setInterval(function(){ 
 		slideChange();
 	}, 6000);

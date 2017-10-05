@@ -34,7 +34,7 @@
 				<span>Personal Styling</span>
 			</p>
 
-			<p class="tagline">"Right choice of wedding planner is collection of Happy Moments"</p>
+			<p class="tagline">Right choice of wedding planner is collection of Happy Moments</p>
 
 	</div>
 </div>
@@ -48,7 +48,7 @@
 
 			<p>We offer customized services like Flying sound, Box Truss, Amazing Stage Lights, Cold Pyro, Fire Balls, Confetti Blasts, LED Stage Setup, Creative Stage Backdrop, Dance Troups, Choreography, Deejay & Anchor. We also co-ordinate and provide celebrity singer to make your sangeet more entertainer.</p>
 
-			<p class="tagline">"An Outstanding Experience Every Time...!"</p>
+			<p class="tagline">An Outstanding Experience Every Time...!</p>
 
 	</div>
 </div>
@@ -60,7 +60,7 @@
 		
 			<p>Being best in the area of wedding planning, we treat every wedding occasion as a close and delicate affair. Moments, with their enthusiastic wedding planners, take control of everything. We are one of the best in on site management and end-moments need of customer. Every function of wedding is given a touch of sophistication with the right combination of tradition and splendour. In short Moments is perfectly the right place to make arrangements for all your wedding occasion.</p>
 
-			<p class="tagline">"Every marriage is beautiful But yours should be Extraordinary...!"</p>
+			<p class="tagline">Every marriage is beautiful But yours should be Extraordinary...!</p>
 
 	</div>
 </div>
@@ -76,7 +76,7 @@
 				We offer some extra ordinary entertainment by Professional Foreign Artists. Entertainments like Belly Dancing, Human Fountain, Welcome Act, Egypt and Tanoura, Flute Mermaid, Sky Drummers, Musical Symphony, Western and Folk Dance Troupe, Live Music Performers makes your event outstanding.
 			</p>
 
-			<p class="tagline">"Events not just with Glamour But with Intelligence and Satisfaction...!"</p>
+			<p class="tagline">Events not just with Glamour But with Intelligence and Satisfaction...!</p>
 
 	</div>
 </div>
@@ -96,7 +96,7 @@
 				<span>Rewards & Recognition Night</span>
 			</p>
 
-			<p class="tagline">"Anything is possible if you have a great planning...!"</p>
+			<p class="tagline">Anything is possible if you have a great planning...!</p>
 
 	</div>
 </div>
@@ -119,7 +119,7 @@
 				<span>Managing Host, Hostess & Emcees</span>
 			</p>
 
-			<p class="tagline">"Planning > Execution > Setup > Clean up Delivering Events Fabulously...!"</p>
+			<p class="tagline">Planning > Execution > Setup > Clean up Delivering Events Fabulously...!</p>
 
 	</div>
 </div>
@@ -137,7 +137,7 @@
 				<span>Promotional Events</span>
 			</p>
 
-			<p class="tagline">"Where everything begins with Happiness...!"</p>
+			<p class="tagline">Where everything begins with Happiness...!</p>
 
 	</div>
 </div>
@@ -156,7 +156,7 @@
 				<span>Chaturmas</span>
 			</p>
 
-			<p class="tagline">"Leave everything to us Be a guest at your own event...!"</p>
+			<p class="tagline">Leave everything to us Be a guest at your own event...!</p>
 
 	</div>
 </div>

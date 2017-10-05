@@ -3,6 +3,11 @@
 /*SOCIAL AREA*/
 .find-btn{
     background: #df2e40 !important;
+    opacity: 0.5;
+}
+.find-btn:hover{
+    background: #df2e40 !important;
+    opacity: 1;
 }
 .social-area {
     top: 25px !important;
