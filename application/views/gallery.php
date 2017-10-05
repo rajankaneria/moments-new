@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery/latest/css/lightgallery.css">
 <script type="text/javascript" src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js">
 </script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/sachinchoolur/lg-zoom/master/dist/lg-zoom.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.1/dist/js/lightgallery.min.js"></script>
 
