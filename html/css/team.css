@@ -99,7 +99,7 @@
 }
 
 .team-member-container.active .member-photo img {
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .team-member-container.active .member-name {
