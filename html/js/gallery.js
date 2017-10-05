@@ -41,6 +41,6 @@ $(document).ready(function(){
  });
 $(function(){
 	setInterval(function(){
-	    adjustImageSize("img.materialboxed",".image-item");
+	    /*adjustImageSize("img.materialboxed",".image-item");*/
 	},10);
 });

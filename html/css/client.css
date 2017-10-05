@@ -18,14 +18,19 @@
     margin-top: 0px;
 }
 
+
+/*.main-footer {
+    position: absolute;
+=======
 .main-footer {
     position: fixed;
+>>>>>>> 50d808e76a09ebd96f80816b4a8147af76fd773d
     height: 10px;
     width: 100%;
     background: rgba(238,49,69,0.85);
     bottom: 0;
 }
-
+*/
 .navigation {
     border-bottom: 3px solid #cf293f;
 }
@@ -79,6 +84,14 @@
     font-size: 13px;
     text-align: justify;
     margin-top: 0px;
+}
+
+.main-footer {
+    position: fixed;
+    height: 10px;
+    width: 100%;
+    background: rgba(238,49,69,0.85);
+    bottom: 0;
 }
 
 
@@ -222,4 +235,4 @@ body{
     .main-image-overlay{
         position: fixed;
     }
-
+}

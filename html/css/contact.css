@@ -197,6 +197,11 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
         width: auto;
         height: 100%;
     }
+<<<<<<< HEAD
+    .contact-btn{
+        width: 100%;
+    }
+=======
 
     .contact-us {
         margin-bottom: 20px !important;
@@ -254,6 +259,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 .office-contact .header {
   font-size: 21px;
   border-bottom: 2px solid #781b2a;
+>>>>>>> 50d808e76a09ebd96f80816b4a8147af76fd773d
 }
 .office-contact .header {
   margin-bottom: 18px;
