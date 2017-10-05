@@ -104,7 +104,7 @@ body{
         float: none;
     }
     .main-image{
-        position: absolute;
+        position: fixed;
     }
     .navigation {
         padding: 4px;
